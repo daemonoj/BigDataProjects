@@ -1,0 +1,1182 @@
+myHadoop: Using HADOOP_HOME=/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2
+myHadoop: Using MH_SCRATCH_DIR=/scratch/ajaved/job_17872038
+myHadoop: Using JAVA_HOME=/cm/shared/apps/spack/cpu/opt/spack/linux-centos8-zen2/gcc-10.2.0/openjdk-11.0.2-ysua3xn34v6hnko3reiffhlg2r2q7fol
+myHadoop: Generating Hadoop configuration in directory in /home/ajaved/expansecluster...
+myHadoop: Backing up old config dir to /home/ajaved/expansecluster.16...
+renamed '/home/ajaved/expansecluster' -> '/home/ajaved/expansecluster.16'
+myHadoop: Designating exp-2-01 as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+exp-2-01
+WARNING: /scratch/ajaved/job_17872038/pids does not exist. Creating.
+WARNING: /scratch/ajaved/job_17872038/logs does not exist. Creating.
+2022-12-01 15:40:32,006 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = exp-2-01/198.202.103.194
+STARTUP_MSG:   args = [-format, -nonInteractive, -force]
+STARTUP_MSG:   version = 3.2.2
+STARTUP_MSG:   classpath = /home/ajaved/expansecluster:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-databind-2.9.10.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsp-api-2.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-identity-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/snappy-java-1.0.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/failureaccess-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/error_prone_annotations-2.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jaxb-api-2.2.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-beanutils-1.9.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-client-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jul-to-slf4j-1.7.25.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-logging-1.1.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/hadoop-annotations-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-common-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-simplekdc-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/woodstox-core-5.0.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/metrics-core-3.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/stax2-api-3.1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-security-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/avro-1.7.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/accessors-smart-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-servlet-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-server-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-crypto-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jcip-annotations-1.0-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-io-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-cli-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/re2j-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/j2objc-annotations-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsr305-3.0.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/nimbus-jose-jwt-7.9.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-lang3-3.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/gson-2.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/token-provider-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-server-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-xdr-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jettison-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-asn1-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/hadoop-auth-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/curator-recipes-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-pkix-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-core-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-compress-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-text-1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/httpcore-4.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-server-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/json-smart-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-webapp-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/dnsjava-2.1.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-servlet-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/asm-5.0.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/log4j-1.2.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-xml-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-annotations-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/htrace-core4-4.1.0-incubating.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-admin-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/audience-annotations-0.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-net-3.6.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/javax.servlet-api-3.1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/guava-27.0-jre.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/javax.activation-api-1.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerb-core-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-math3-3.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-collections-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-util-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-core-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/zookeeper-3.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/curator-client-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/checker-qual-2.5.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-io-2.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jetty-http-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsch-0.1.55.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-codec-1.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/httpclient-4.5.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/commons-configuration2-2.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/kerby-config-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/animal-sniffer-annotations-1.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/curator-framework-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/netty-3.10.6.Final.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/paranamer-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jsr311-api-1.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/slf4j-api-1.7.25.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/lib/jersey-json-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-kms-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-common-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/common/hadoop-nfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-identity-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-io-2.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-pkix-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/okio-1.6.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-asn1-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-xdr-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-core-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/gson-2.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/httpclient-4.5.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-configuration2-2.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/re2j-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-text-1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/curator-framework-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-server-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-webapp-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/woodstox-core-5.0.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-servlet-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/accessors-smart-1.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jcip-annotations-1.0-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/asm-5.0.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/paranamer-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/httpcore-4.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/j2objc-annotations-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/error_prone_annotations-2.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-codec-1.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/okhttp-2.7.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-util-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerby-config-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/json-simple-1.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/guava-27.0-jre.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/checker-qual-2.5.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/nimbus-jose-jwt-7.9.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jaxb-api-2.2.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/netty-all-4.1.48.Final.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-util-ajax-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/curator-client-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/curator-recipes-2.13.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jaxb-impl-2.2.3-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/javax.servlet-api-3.1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-security-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/netty-3.10.6.Final.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-collections-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/avro-1.7.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/stax2-api-3.1.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-http-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jsr311-api-1.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-json-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-xc-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-lang3-3.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-math3-3.1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-simplekdc-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/animal-sniffer-annotations-1.17.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/dnsjava-2.1.7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-core-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jsch-0.1.55.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/hadoop-auth-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-jaxrs-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-compress-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/json-smart-2.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/failureaccess-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/snappy-java-1.0.5.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/htrace-core4-4.1.0-incubating.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jersey-server-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-servlet-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-client-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/hadoop-annotations-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-core-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-net-3.6.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-io-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/zookeeper-3.4.13.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-util-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-databind-2.9.10.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/javax.activation-api-1.2.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jettison-1.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-admin-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/audience-annotations-0.5.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-common-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jetty-xml-9.4.20.v20190813.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jackson-annotations-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/token-provider-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/jsr305-3.0.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-beanutils-1.9.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-crypto-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/lib/kerb-server-1.0.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-httpfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-native-client-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-client-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-native-client-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-rbf-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-nfs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-client-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/hdfs/hadoop-hdfs-rbf-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/lib/junit-4.11.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.2.2-tests.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-uploader-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-nativetask-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/mapreduce/hadoop-mapreduce-client-app-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/java-util-1.9.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jackson-jaxrs-base-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/mssql-jdbc-6.2.1.jre7.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/json-io-2.5.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/bcprov-jdk15on-1.60.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/ehcache-3.3.1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/fst-2.50.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/guice-4.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/bcpkix-jdk15on-1.60.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/objenesis-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jackson-module-jaxb-annotations-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/aopalliance-1.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jersey-client-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/snakeyaml-1.16.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jackson-jaxrs-json-provider-2.9.10.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/javax.inject-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/jersey-guice-1.19.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/geronimo-jcache_1.0_spec-1.0-alpha-1.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/swagger-annotations-1.5.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/guice-servlet-4.0.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/metrics-core-3.2.4.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/lib/HikariCP-java7-2.4.12.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-services-core-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-router-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-api-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-registry-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-timeline-pluginstorage-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-tests-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-services-api-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-client-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-common-3.2.2.jar:/expanse/lustre/projects/uot182/fegaras/hadoop-3.2.2/share/hadoop/yarn/hadoop-yarn-submarine-3.2.2.jar
+STARTUP_MSG:   build = Unknown -r 7a3bc90b05f257c8ace2f76d74264906f0f7a932; compiled by 'hexiaoqiao' on 2021-01-03T09:26Z
+STARTUP_MSG:   java = 11.0.2
+************************************************************/
+2022-12-01 15:40:32,012 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2022-12-01 15:40:32,065 INFO namenode.NameNode: createNameNode [-format, -nonInteractive, -force]
+2022-12-01 15:40:32,352 INFO common.Util: Assuming 'file' scheme for path /scratch/ajaved/job_17872038/namenode_data in configuration.
+2022-12-01 15:40:32,353 INFO common.Util: Assuming 'file' scheme for path /scratch/ajaved/job_17872038/namenode_data in configuration.
+Formatting using clusterid: CID-528e1ac4-892c-4c22-b936-48437a55115e
+2022-12-01 15:40:32,373 INFO namenode.FSEditLog: Edit logging is async:true
+2022-12-01 15:40:32,392 INFO namenode.FSNamesystem: KeyProvider: null
+2022-12-01 15:40:32,393 INFO namenode.FSNamesystem: fsLock is fair: true
+2022-12-01 15:40:32,393 INFO namenode.FSNamesystem: Detailed lock hold time metrics enabled: false
+2022-12-01 15:40:32,421 INFO namenode.FSNamesystem: fsOwner             = ajaved (auth:SIMPLE)
+2022-12-01 15:40:32,421 INFO namenode.FSNamesystem: supergroup          = supergroup
+2022-12-01 15:40:32,421 INFO namenode.FSNamesystem: isPermissionEnabled = true
+2022-12-01 15:40:32,421 INFO namenode.FSNamesystem: HA Enabled: false
+2022-12-01 15:40:32,512 INFO common.Util: dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2022-12-01 15:40:32,519 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2022-12-01 15:40:32,519 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2022-12-01 15:40:32,521 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2022-12-01 15:40:32,521 INFO blockmanagement.BlockManager: The block deletion will start around 2022 Dec 01 15:40:32
+2022-12-01 15:40:32,522 INFO util.GSet: Computing capacity for map BlocksMap
+2022-12-01 15:40:32,522 INFO util.GSet: VM type       = 64-bit
+2022-12-01 15:40:32,523 INFO util.GSet: 2.0% max memory 30.0 GB = 613.8 MB
+2022-12-01 15:40:32,523 INFO util.GSet: capacity      = 2^26 = 67108864 entries
+2022-12-01 15:40:32,556 INFO blockmanagement.BlockManager: Storage policy satisfier is disabled
+2022-12-01 15:40:32,556 INFO blockmanagement.BlockManager: dfs.block.access.token.enable = false
+2022-12-01 15:40:32,560 INFO Configuration.deprecation: No unit for dfs.namenode.safemode.extension(30000) assuming MILLISECONDS
+2022-12-01 15:40:32,560 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2022-12-01 15:40:32,560 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.min.datanodes = 0
+2022-12-01 15:40:32,560 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.extension = 30000
+2022-12-01 15:40:32,560 INFO blockmanagement.BlockManager: defaultReplication         = 3
+2022-12-01 15:40:32,560 INFO blockmanagement.BlockManager: maxReplication             = 512
+2022-12-01 15:40:32,560 INFO blockmanagement.BlockManager: minReplication             = 1
+2022-12-01 15:40:32,560 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+2022-12-01 15:40:32,560 INFO blockmanagement.BlockManager: redundancyRecheckInterval  = 3000ms
+2022-12-01 15:40:32,560 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+2022-12-01 15:40:32,560 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2022-12-01 15:40:32,574 INFO namenode.FSDirectory: GLOBAL serial map: bits=29 maxEntries=536870911
+2022-12-01 15:40:32,574 INFO namenode.FSDirectory: USER serial map: bits=24 maxEntries=16777215
+2022-12-01 15:40:32,574 INFO namenode.FSDirectory: GROUP serial map: bits=24 maxEntries=16777215
+2022-12-01 15:40:32,574 INFO namenode.FSDirectory: XATTR serial map: bits=24 maxEntries=16777215
+2022-12-01 15:40:32,580 INFO util.GSet: Computing capacity for map INodeMap
+2022-12-01 15:40:32,580 INFO util.GSet: VM type       = 64-bit
+2022-12-01 15:40:32,580 INFO util.GSet: 1.0% max memory 30.0 GB = 306.9 MB
+2022-12-01 15:40:32,580 INFO util.GSet: capacity      = 2^25 = 33554432 entries
+2022-12-01 15:40:32,594 INFO namenode.FSDirectory: ACLs enabled? false
+2022-12-01 15:40:32,594 INFO namenode.FSDirectory: POSIX ACL inheritance enabled? true
+2022-12-01 15:40:32,594 INFO namenode.FSDirectory: XAttrs enabled? true
+2022-12-01 15:40:32,594 INFO namenode.NameNode: Caching file names occurring more than 10 times
+2022-12-01 15:40:32,598 INFO snapshot.SnapshotManager: Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2022-12-01 15:40:32,599 INFO snapshot.SnapshotManager: SkipList is disabled
+2022-12-01 15:40:32,602 INFO util.GSet: Computing capacity for map cachedBlocks
+2022-12-01 15:40:32,602 INFO util.GSet: VM type       = 64-bit
+2022-12-01 15:40:32,602 INFO util.GSet: 0.25% max memory 30.0 GB = 76.7 MB
+2022-12-01 15:40:32,602 INFO util.GSet: capacity      = 2^23 = 8388608 entries
+2022-12-01 15:40:32,612 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2022-12-01 15:40:32,612 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2022-12-01 15:40:32,612 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2022-12-01 15:40:32,614 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+2022-12-01 15:40:32,614 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2022-12-01 15:40:32,615 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+2022-12-01 15:40:32,615 INFO util.GSet: VM type       = 64-bit
+2022-12-01 15:40:32,616 INFO util.GSet: 0.029999999329447746% max memory 30.0 GB = 9.2 MB
+2022-12-01 15:40:32,616 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+2022-12-01 15:40:32,632 INFO namenode.FSImage: Allocated new BlockPoolId: BP-3959686-198.202.103.194-1669938032627
+2022-12-01 15:40:32,641 INFO common.Storage: Storage directory /scratch/ajaved/job_17872038/namenode_data has been successfully formatted.
+2022-12-01 15:40:32,665 INFO namenode.FSImageFormatProtobuf: Saving image file /scratch/ajaved/job_17872038/namenode_data/current/fsimage.ckpt_0000000000000000000 using no compression
+2022-12-01 15:40:32,743 INFO namenode.FSImageFormatProtobuf: Image file /scratch/ajaved/job_17872038/namenode_data/current/fsimage.ckpt_0000000000000000000 of size 401 bytes saved in 0 seconds .
+2022-12-01 15:40:32,756 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+2022-12-01 15:40:32,760 INFO namenode.FSImage: FSImageSaver clean checkpoint: txid=0 when meet shutdown.
+2022-12-01 15:40:32,760 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at exp-2-01/198.202.103.194
+************************************************************/
+myHadoop:  
+myHadoop: Enabling experimental Spark support
+myHadoop: Using SPARK_CONF_DIR=/home/ajaved/expansecluster/spark
+myHadoop:  
+To use Spark, you will want to type the following commands:"
+  source /home/ajaved/expansecluster/spark/spark-env.sh
+  myspark start
+Starting namenodes on [exp-2-01]
+Starting datanodes
+WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+localhost: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+localhost: It is also possible that a host key has just been changed.
+localhost: The fingerprint for the ED25519 key sent by the remote host is
+localhost: SHA256:NfhwPGjaKzhVjZkkhI/gd0LXfbPM6XqLaQqO8V+RciE.
+localhost: Please contact your system administrator.
+localhost: Add correct host key in /home/ajaved/.ssh/known_hosts to get rid of this message.
+localhost: Offending ED25519 key in /home/ajaved/.ssh/known_hosts:1
+localhost: Password authentication is disabled to avoid man-in-the-middle attacks.
+localhost: Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+localhost: WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+Starting secondary namenodes [exp-2-01]
+starting org.apache.spark.deploy.master.Master, logging to /scratch/ajaved/job_17872038/logs/spark-ajaved-org.apache.spark.deploy.master.Master-1-exp-2-01.out
+exp-2-01: starting org.apache.spark.deploy.worker.Worker, logging to /expanse/lustre/projects/uot182/fegaras/spark-3.1.2-bin-hadoop3.2/logs/spark-ajaved-org.apache.spark.deploy.worker.Worker-1-exp-2-01.out
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/expanse/lustre/projects/uot182/fegaras/spark-3.1.2-bin-hadoop3.2/jars/spark-unsafe_2.12-3.1.2.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-12-01 15:40:55,758 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-12-01 15:40:55,904 INFO spark.SparkContext: Running Spark version 3.1.2
+2022-12-01 15:40:55,934 INFO resource.ResourceUtils: ==============================================================
+2022-12-01 15:40:55,934 INFO resource.ResourceUtils: No custom resources configured for spark.driver.
+2022-12-01 15:40:55,934 INFO resource.ResourceUtils: ==============================================================
+2022-12-01 15:40:55,935 INFO spark.SparkContext: Submitted application: Connected Components
+2022-12-01 15:40:55,950 INFO resource.ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 12, script: , vendor: , memory -> name: memory, amount: 24576, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2022-12-01 15:40:55,964 INFO resource.ResourceProfile: Limiting resource is cpus at 12 tasks per executor
+2022-12-01 15:40:55,966 INFO resource.ResourceProfileManager: Added ResourceProfile id: 0
+2022-12-01 15:40:55,998 INFO spark.SecurityManager: Changing view acls to: ajaved
+2022-12-01 15:40:55,998 INFO spark.SecurityManager: Changing modify acls to: ajaved
+2022-12-01 15:40:55,998 INFO spark.SecurityManager: Changing view acls groups to: 
+2022-12-01 15:40:55,998 INFO spark.SecurityManager: Changing modify acls groups to: 
+2022-12-01 15:40:55,998 INFO spark.SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(ajaved); groups with view permissions: Set(); users  with modify permissions: Set(ajaved); groups with modify permissions: Set()
+2022-12-01 15:40:56,165 INFO util.Utils: Successfully started service 'sparkDriver' on port 34699.
+2022-12-01 15:40:56,192 INFO spark.SparkEnv: Registering MapOutputTracker
+2022-12-01 15:40:56,217 INFO spark.SparkEnv: Registering BlockManagerMaster
+2022-12-01 15:40:56,231 INFO storage.BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2022-12-01 15:40:56,231 INFO storage.BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+2022-12-01 15:40:56,234 INFO spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+2022-12-01 15:40:56,244 INFO storage.DiskBlockManager: Created local directory at /tmp/blockmgr-58b49c49-3115-435b-9640-cd0c1cf65786
+2022-12-01 15:40:56,265 INFO memory.MemoryStore: MemoryStore started with capacity 434.4 MiB
+2022-12-01 15:40:56,278 INFO spark.SparkEnv: Registering OutputCommitCoordinator
+2022-12-01 15:40:56,348 INFO util.log: Logging initialized @1683ms to org.sparkproject.jetty.util.log.Slf4jLog
+2022-12-01 15:40:56,413 INFO server.Server: jetty-9.4.40.v20210413; built: 2021-04-13T20:42:42.668Z; git: b881a572662e1943a14ae12e7e1207989f218b74; jvm 11.0.2+9
+2022-12-01 15:40:56,427 INFO server.Server: Started @1763ms
+2022-12-01 15:40:56,454 INFO server.AbstractConnector: Started ServerConnector@4bbc8023{HTTP/1.1, (http/1.1)}{exp-2-01:4040}
+2022-12-01 15:40:56,454 INFO util.Utils: Successfully started service 'SparkUI' on port 4040.
+2022-12-01 15:40:56,471 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@12d1f1d4{/jobs,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,473 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6cd164a6{/jobs/json,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,473 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@64469d8{/jobs/job,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,476 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5c8e67b9{/jobs/job/json,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,476 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@49206065{/stages,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,477 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1317b708{/stages/json,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,478 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2e51d054{/stages/stage,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,479 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@44a6a68e{/stages/stage/json,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,480 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@79316f3a{/stages/pool,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,480 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@49fe3142{/stages/pool/json,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,481 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@61c42416{/storage,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,482 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@a565cbd{/storage/json,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,482 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2f66f0d0{/storage/rdd,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,483 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@7569ea63{/storage/rdd/json,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,483 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@16c587de{/environment,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,484 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@76db540e{/environment/json,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,484 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2af4129d{/executors,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,485 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@1640190a{/executors/json,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,486 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2042ccce{/executors/threadDump,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,488 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@36c0d0bd{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,496 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@688d411b{/static,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,496 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@475646d4{/,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,497 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@3db972d2{/api,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,498 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@2d272b0d{/jobs/job/kill,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,498 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@5c448433{/stages/stage/kill,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,500 INFO ui.SparkUI: Bound SparkUI to exp-2-01, and started at http://exp-2-01.expanse.sdsc.edu:4040
+2022-12-01 15:40:56,516 INFO spark.SparkContext: Added JAR file:/home/ajaved/project8/graph.jar at spark://exp-2-01.expanse.sdsc.edu:34699/jars/graph.jar with timestamp 1669938055898
+2022-12-01 15:40:56,662 INFO client.StandaloneAppClient$ClientEndpoint: Connecting to master spark://exp-2-01:7077...
+2022-12-01 15:40:56,701 INFO client.TransportClientFactory: Successfully created connection to exp-2-01/198.202.103.194:7077 after 23 ms (0 ms spent in bootstraps)
+2022-12-01 15:40:56,820 INFO cluster.StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20221201154056-0000
+2022-12-01 15:40:56,827 INFO util.Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 34489.
+2022-12-01 15:40:56,827 INFO netty.NettyBlockTransferService: Server created on exp-2-01.expanse.sdsc.edu:34489
+2022-12-01 15:40:56,828 INFO storage.BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2022-12-01 15:40:56,832 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221201154056-0000/0 on worker-20221201154049-198.202.103.194-45401 (198.202.103.194:45401) with 12 core(s)
+2022-12-01 15:40:56,834 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221201154056-0000/0 on hostPort 198.202.103.194:45401 with 12 core(s), 24.0 GiB RAM
+2022-12-01 15:40:56,835 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221201154056-0000/1 on worker-20221201154049-198.202.103.194-45401 (198.202.103.194:45401) with 12 core(s)
+2022-12-01 15:40:56,835 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221201154056-0000/1 on hostPort 198.202.103.194:45401 with 12 core(s), 24.0 GiB RAM
+2022-12-01 15:40:56,835 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221201154056-0000/2 on worker-20221201154049-198.202.103.194-45401 (198.202.103.194:45401) with 12 core(s)
+2022-12-01 15:40:56,836 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221201154056-0000/2 on hostPort 198.202.103.194:45401 with 12 core(s), 24.0 GiB RAM
+2022-12-01 15:40:56,836 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221201154056-0000/3 on worker-20221201154049-198.202.103.194-45401 (198.202.103.194:45401) with 12 core(s)
+2022-12-01 15:40:56,836 INFO storage.BlockManagerMaster: Registering BlockManager BlockManagerId(driver, exp-2-01.expanse.sdsc.edu, 34489, None)
+2022-12-01 15:40:56,836 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221201154056-0000/3 on hostPort 198.202.103.194:45401 with 12 core(s), 24.0 GiB RAM
+2022-12-01 15:40:56,836 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221201154056-0000/4 on worker-20221201154049-198.202.103.194-45401 (198.202.103.194:45401) with 12 core(s)
+2022-12-01 15:40:56,837 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221201154056-0000/4 on hostPort 198.202.103.194:45401 with 12 core(s), 24.0 GiB RAM
+2022-12-01 15:40:56,837 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221201154056-0000/5 on worker-20221201154049-198.202.103.194-45401 (198.202.103.194:45401) with 12 core(s)
+2022-12-01 15:40:56,837 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221201154056-0000/5 on hostPort 198.202.103.194:45401 with 12 core(s), 24.0 GiB RAM
+2022-12-01 15:40:56,837 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221201154056-0000/6 on worker-20221201154049-198.202.103.194-45401 (198.202.103.194:45401) with 12 core(s)
+2022-12-01 15:40:56,838 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221201154056-0000/6 on hostPort 198.202.103.194:45401 with 12 core(s), 24.0 GiB RAM
+2022-12-01 15:40:56,838 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221201154056-0000/7 on worker-20221201154049-198.202.103.194-45401 (198.202.103.194:45401) with 12 core(s)
+2022-12-01 15:40:56,838 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221201154056-0000/7 on hostPort 198.202.103.194:45401 with 12 core(s), 24.0 GiB RAM
+2022-12-01 15:40:56,838 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221201154056-0000/8 on worker-20221201154049-198.202.103.194-45401 (198.202.103.194:45401) with 12 core(s)
+2022-12-01 15:40:56,839 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221201154056-0000/8 on hostPort 198.202.103.194:45401 with 12 core(s), 24.0 GiB RAM
+2022-12-01 15:40:56,839 INFO client.StandaloneAppClient$ClientEndpoint: Executor added: app-20221201154056-0000/9 on worker-20221201154049-198.202.103.194-45401 (198.202.103.194:45401) with 12 core(s)
+2022-12-01 15:40:56,839 INFO cluster.StandaloneSchedulerBackend: Granted executor ID app-20221201154056-0000/9 on hostPort 198.202.103.194:45401 with 12 core(s), 24.0 GiB RAM
+2022-12-01 15:40:56,840 INFO storage.BlockManagerMasterEndpoint: Registering block manager exp-2-01.expanse.sdsc.edu:34489 with 434.4 MiB RAM, BlockManagerId(driver, exp-2-01.expanse.sdsc.edu, 34489, None)
+2022-12-01 15:40:56,842 INFO storage.BlockManagerMaster: Registered BlockManager BlockManagerId(driver, exp-2-01.expanse.sdsc.edu, 34489, None)
+2022-12-01 15:40:56,843 INFO storage.BlockManager: Initialized BlockManager: BlockManagerId(driver, exp-2-01.expanse.sdsc.edu, 34489, None)
+2022-12-01 15:40:56,967 INFO handler.ContextHandler: Started o.s.j.s.ServletContextHandler@6749fe50{/metrics/json,null,AVAILABLE,@Spark}
+2022-12-01 15:40:56,969 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221201154056-0000/3 is now RUNNING
+2022-12-01 15:40:56,970 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221201154056-0000/7 is now RUNNING
+2022-12-01 15:40:56,973 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221201154056-0000/8 is now RUNNING
+2022-12-01 15:40:56,974 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221201154056-0000/9 is now RUNNING
+2022-12-01 15:40:56,976 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221201154056-0000/2 is now RUNNING
+2022-12-01 15:40:56,980 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221201154056-0000/4 is now RUNNING
+2022-12-01 15:40:56,982 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221201154056-0000/6 is now RUNNING
+2022-12-01 15:40:56,985 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221201154056-0000/0 is now RUNNING
+2022-12-01 15:40:56,988 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221201154056-0000/5 is now RUNNING
+2022-12-01 15:40:56,991 INFO client.StandaloneAppClient$ClientEndpoint: Executor updated: app-20221201154056-0000/1 is now RUNNING
+2022-12-01 15:40:57,006 INFO cluster.StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+2022-12-01 15:40:57,343 INFO memory.MemoryStore: Block broadcast_0 stored as values in memory (estimated size 177.3 KiB, free 434.2 MiB)
+2022-12-01 15:40:57,470 INFO memory.MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 27.6 KiB, free 434.2 MiB)
+2022-12-01 15:40:57,473 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 27.6 KiB, free: 434.4 MiB)
+2022-12-01 15:40:57,475 INFO spark.SparkContext: Created broadcast 0 from textFile at ConnectedComponents.scala:16
+2022-12-01 15:40:57,875 INFO mapred.FileInputFormat: Total input files to process : 1
+2022-12-01 15:40:58,010 INFO spark.SparkContext: Starting job: fold at VertexRDDImpl.scala:90
+2022-12-01 15:40:58,025 INFO scheduler.DAGScheduler: Registering RDD 10 (mapPartitions at VertexRDD.scala:356) as input to shuffle 4
+2022-12-01 15:40:58,029 INFO scheduler.DAGScheduler: Registering RDD 5 (map at ConnectedComponents.scala:27) as input to shuffle 1
+2022-12-01 15:40:58,029 INFO scheduler.DAGScheduler: Registering RDD 26 (mapPartitions at VertexRDDImpl.scala:247) as input to shuffle 2
+2022-12-01 15:40:58,030 INFO scheduler.DAGScheduler: Registering RDD 22 (mapPartitions at VertexRDDImpl.scala:247) as input to shuffle 0
+2022-12-01 15:40:58,031 INFO scheduler.DAGScheduler: Registering RDD 30 (mapPartitions at GraphImpl.scala:208) as input to shuffle 3
+2022-12-01 15:40:58,033 INFO scheduler.DAGScheduler: Got job 0 (fold at VertexRDDImpl.scala:90) with 2 output partitions
+2022-12-01 15:40:58,033 INFO scheduler.DAGScheduler: Final stage: ResultStage 5 (fold at VertexRDDImpl.scala:90)
+2022-12-01 15:40:58,033 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 0, ShuffleMapStage 1, ShuffleMapStage 4)
+2022-12-01 15:40:58,039 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 0, ShuffleMapStage 1, ShuffleMapStage 4)
+2022-12-01 15:40:58,046 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 0 (VertexRDD.createRoutingTables - vid2pid (aggregation) MapPartitionsRDD[10] at mapPartitions at VertexRDD.scala:356), which has no missing parents
+2022-12-01 15:40:58,087 INFO memory.MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.1 KiB, free 434.2 MiB)
+2022-12-01 15:40:58,089 INFO memory.MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.2 KiB, free 434.2 MiB)
+2022-12-01 15:40:58,090 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 4.2 KiB, free: 434.4 MiB)
+2022-12-01 15:40:58,090 INFO spark.SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:40:58,103 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 0 (VertexRDD.createRoutingTables - vid2pid (aggregation) MapPartitionsRDD[10] at mapPartitions at VertexRDD.scala:356) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:40:58,104 INFO scheduler.TaskSchedulerImpl: Adding task set 0.0 with 2 tasks resource profile 0
+2022-12-01 15:40:58,122 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[5] at map at ConnectedComponents.scala:27), which has no missing parents
+2022-12-01 15:40:58,128 INFO memory.MemoryStore: Block broadcast_2 stored as values in memory (estimated size 6.4 KiB, free 434.2 MiB)
+2022-12-01 15:40:58,130 INFO memory.MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 3.7 KiB, free 434.2 MiB)
+2022-12-01 15:40:58,130 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 3.7 KiB, free: 434.4 MiB)
+2022-12-01 15:40:58,131 INFO spark.SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:40:58,132 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[5] at map at ConnectedComponents.scala:27) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:40:58,132 INFO scheduler.TaskSchedulerImpl: Adding task set 1.0 with 2 tasks resource profile 0
+2022-12-01 15:40:58,709 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.194:54018) with ID 3,  ResourceProfileId 0
+2022-12-01 15:40:58,732 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.194:54022) with ID 8,  ResourceProfileId 0
+2022-12-01 15:40:58,765 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.194:54026) with ID 2,  ResourceProfileId 0
+2022-12-01 15:40:58,804 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.194:54028) with ID 7,  ResourceProfileId 0
+2022-12-01 15:40:58,842 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.194:34899 with 14.2 GiB RAM, BlockManagerId(3, 198.202.103.194, 34899, None)
+2022-12-01 15:40:58,842 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.194:54032) with ID 1,  ResourceProfileId 0
+2022-12-01 15:40:58,846 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.194:40573 with 14.2 GiB RAM, BlockManagerId(8, 198.202.103.194, 40573, None)
+2022-12-01 15:40:58,846 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.194:54030) with ID 6,  ResourceProfileId 0
+2022-12-01 15:40:58,875 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.194:54034) with ID 5,  ResourceProfileId 0
+2022-12-01 15:40:58,887 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.194:54038) with ID 4,  ResourceProfileId 0
+2022-12-01 15:40:58,890 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.194:46137 with 14.2 GiB RAM, BlockManagerId(2, 198.202.103.194, 46137, None)
+2022-12-01 15:40:58,900 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.194:54040) with ID 9,  ResourceProfileId 0
+2022-12-01 15:40:58,902 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (198.202.103.194:54036) with ID 0,  ResourceProfileId 0
+2022-12-01 15:40:58,947 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.194:38485 with 14.2 GiB RAM, BlockManagerId(7, 198.202.103.194, 38485, None)
+2022-12-01 15:40:58,949 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.194:38899 with 14.2 GiB RAM, BlockManagerId(1, 198.202.103.194, 38899, None)
+2022-12-01 15:40:58,965 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.194:35287 with 14.2 GiB RAM, BlockManagerId(6, 198.202.103.194, 35287, None)
+2022-12-01 15:40:58,967 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (198.202.103.194, executor 3, partition 0, ANY, 4511 bytes) taskResourceAssignments Map()
+2022-12-01 15:40:58,969 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1) (198.202.103.194, executor 3, partition 1, ANY, 4511 bytes) taskResourceAssignments Map()
+2022-12-01 15:40:58,970 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 1.0 (TID 2) (198.202.103.194, executor 3, partition 0, ANY, 4511 bytes) taskResourceAssignments Map()
+2022-12-01 15:40:58,971 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 1.0 (TID 3) (198.202.103.194, executor 3, partition 1, ANY, 4511 bytes) taskResourceAssignments Map()
+2022-12-01 15:40:58,980 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.194:40931 with 14.2 GiB RAM, BlockManagerId(5, 198.202.103.194, 40931, None)
+2022-12-01 15:40:58,991 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.194:36413 with 14.2 GiB RAM, BlockManagerId(4, 198.202.103.194, 36413, None)
+2022-12-01 15:40:59,009 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.194:46507 with 14.2 GiB RAM, BlockManagerId(0, 198.202.103.194, 46507, None)
+2022-12-01 15:40:59,017 INFO storage.BlockManagerMasterEndpoint: Registering block manager 198.202.103.194:41611 with 14.2 GiB RAM, BlockManagerId(9, 198.202.103.194, 41611, None)
+2022-12-01 15:40:59,183 INFO storage.BlockManagerInfo: Added broadcast_2_piece0 in memory on 198.202.103.194:34899 (size: 3.7 KiB, free: 14.2 GiB)
+2022-12-01 15:40:59,184 INFO storage.BlockManagerInfo: Added broadcast_1_piece0 in memory on 198.202.103.194:34899 (size: 4.2 KiB, free: 14.2 GiB)
+2022-12-01 15:40:59,475 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 198.202.103.194:34899 (size: 27.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:00,526 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 1.0 (TID 3) in 1555 ms on 198.202.103.194 (executor 3) (1/2)
+2022-12-01 15:41:00,527 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 1.0 (TID 2) in 1557 ms on 198.202.103.194 (executor 3) (2/2)
+2022-12-01 15:41:00,528 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:00,535 INFO scheduler.DAGScheduler: ShuffleMapStage 1 (map at ConnectedComponents.scala:27) finished in 2.410 s
+2022-12-01 15:41:00,536 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:00,536 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 0)
+2022-12-01 15:41:00,536 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 5, ShuffleMapStage 2, ShuffleMapStage 3, ShuffleMapStage 4)
+2022-12-01 15:41:00,536 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:01,048 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 2100 ms on 198.202.103.194 (executor 3) (1/2)
+2022-12-01 15:41:01,049 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 2080 ms on 198.202.103.194 (executor 3) (2/2)
+2022-12-01 15:41:01,049 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:01,050 INFO scheduler.DAGScheduler: ShuffleMapStage 0 (mapPartitions at VertexRDD.scala:356) finished in 2.989 s
+2022-12-01 15:41:01,051 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:01,051 INFO scheduler.DAGScheduler: running: Set()
+2022-12-01 15:41:01,051 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 5, ShuffleMapStage 2, ShuffleMapStage 3, ShuffleMapStage 4)
+2022-12-01 15:41:01,051 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:01,053 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 2 (ReplicatedVertexView.upgrade(true, true) - shippedVerts true true (broadcast) MapPartitionsRDD[26] at mapPartitions at VertexRDDImpl.scala:247), which has no missing parents
+2022-12-01 15:41:01,071 INFO memory.MemoryStore: Block broadcast_3 stored as values in memory (estimated size 8.6 KiB, free 434.2 MiB)
+2022-12-01 15:41:01,072 INFO memory.MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 4.4 KiB, free 434.2 MiB)
+2022-12-01 15:41:01,073 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 4.4 KiB, free: 434.4 MiB)
+2022-12-01 15:41:01,074 INFO spark.SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:01,074 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 2 (ReplicatedVertexView.upgrade(true, true) - shippedVerts true true (broadcast) MapPartitionsRDD[26] at mapPartitions at VertexRDDImpl.scala:247) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:01,074 INFO scheduler.TaskSchedulerImpl: Adding task set 2.0 with 2 tasks resource profile 0
+2022-12-01 15:41:01,076 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 3 (ReplicatedVertexView.updateVertices - shippedVerts false false (broadcast) MapPartitionsRDD[22] at mapPartitions at VertexRDDImpl.scala:247), which has no missing parents
+2022-12-01 15:41:01,080 INFO memory.MemoryStore: Block broadcast_4 stored as values in memory (estimated size 9.0 KiB, free 434.2 MiB)
+2022-12-01 15:41:01,081 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 2.0 (TID 4) (198.202.103.194, executor 0, partition 0, NODE_LOCAL, 4536 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:01,081 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 2.0 (TID 5) (198.202.103.194, executor 8, partition 1, NODE_LOCAL, 4536 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:01,082 INFO memory.MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 4.6 KiB, free 434.2 MiB)
+2022-12-01 15:41:01,082 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 4.6 KiB, free: 434.4 MiB)
+2022-12-01 15:41:01,083 INFO spark.SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:01,083 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 3 (ReplicatedVertexView.updateVertices - shippedVerts false false (broadcast) MapPartitionsRDD[22] at mapPartitions at VertexRDDImpl.scala:247) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:01,083 INFO scheduler.TaskSchedulerImpl: Adding task set 3.0 with 2 tasks resource profile 0
+2022-12-01 15:41:01,085 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 3.0 (TID 6) (198.202.103.194, executor 5, partition 0, NODE_LOCAL, 4568 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:01,085 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 3.0 (TID 7) (198.202.103.194, executor 9, partition 1, NODE_LOCAL, 4568 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:01,234 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 198.202.103.194:40573 (size: 4.4 KiB, free: 14.2 GiB)
+2022-12-01 15:41:01,235 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 198.202.103.194:40931 (size: 4.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:01,243 INFO storage.BlockManagerInfo: Added broadcast_3_piece0 in memory on 198.202.103.194:46507 (size: 4.4 KiB, free: 14.2 GiB)
+2022-12-01 15:41:01,248 INFO storage.BlockManagerInfo: Added broadcast_4_piece0 in memory on 198.202.103.194:41611 (size: 4.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:01,440 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 198.202.103.194:54022
+2022-12-01 15:41:01,452 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 198.202.103.194:54036
+2022-12-01 15:41:01,456 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 198.202.103.194:54040
+2022-12-01 15:41:01,456 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 1 to 198.202.103.194:54034
+2022-12-01 15:41:01,731 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 4 to 198.202.103.194:54040
+2022-12-01 15:41:01,733 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 4 to 198.202.103.194:54022
+2022-12-01 15:41:01,745 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 4 to 198.202.103.194:54036
+2022-12-01 15:41:01,750 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 4 to 198.202.103.194:54034
+2022-12-01 15:41:01,928 INFO storage.BlockManagerInfo: Added rdd_13_0 in memory on 198.202.103.194:46507 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:01,936 INFO storage.BlockManagerInfo: Added rdd_13_1 in memory on 198.202.103.194:40573 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:01,953 INFO storage.BlockManagerInfo: Added rdd_18_0 in memory on 198.202.103.194:46507 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:01,959 INFO storage.BlockManagerInfo: Added rdd_13_0 in memory on 198.202.103.194:40931 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:01,960 INFO storage.BlockManagerInfo: Added rdd_18_1 in memory on 198.202.103.194:40573 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:01,973 INFO storage.BlockManagerInfo: Added rdd_13_1 in memory on 198.202.103.194:41611 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:02,022 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 2.0 (TID 4) in 946 ms on 198.202.103.194 (executor 0) (1/2)
+2022-12-01 15:41:02,024 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 2.0 (TID 5) in 943 ms on 198.202.103.194 (executor 8) (2/2)
+2022-12-01 15:41:02,024 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:02,025 INFO scheduler.DAGScheduler: ShuffleMapStage 2 (mapPartitions at VertexRDDImpl.scala:247) finished in 0.965 s
+2022-12-01 15:41:02,025 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:02,025 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 3)
+2022-12-01 15:41:02,025 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 5, ShuffleMapStage 4)
+2022-12-01 15:41:02,025 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:02,093 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 3.0 (TID 6) in 1007 ms on 198.202.103.194 (executor 5) (1/2)
+2022-12-01 15:41:02,098 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 3.0 (TID 7) in 1013 ms on 198.202.103.194 (executor 9) (2/2)
+2022-12-01 15:41:02,098 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:02,099 INFO scheduler.DAGScheduler: ShuffleMapStage 3 (mapPartitions at VertexRDDImpl.scala:247) finished in 1.022 s
+2022-12-01 15:41:02,099 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:02,099 INFO scheduler.DAGScheduler: running: Set()
+2022-12-01 15:41:02,099 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 5, ShuffleMapStage 4)
+2022-12-01 15:41:02,099 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:02,100 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 4 (GraphImpl.aggregateMessages - preAgg MapPartitionsRDD[30] at mapPartitions at GraphImpl.scala:208), which has no missing parents
+2022-12-01 15:41:02,109 INFO memory.MemoryStore: Block broadcast_5 stored as values in memory (estimated size 11.4 KiB, free 434.1 MiB)
+2022-12-01 15:41:02,110 INFO memory.MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 5.6 KiB, free 434.1 MiB)
+2022-12-01 15:41:02,111 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 5.6 KiB, free: 434.4 MiB)
+2022-12-01 15:41:02,111 INFO spark.SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:02,112 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 4 (GraphImpl.aggregateMessages - preAgg MapPartitionsRDD[30] at mapPartitions at GraphImpl.scala:208) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:02,112 INFO scheduler.TaskSchedulerImpl: Adding task set 4.0 with 2 tasks resource profile 0
+2022-12-01 15:41:02,114 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 4.0 (TID 8) (198.202.103.194, executor 7, partition 0, ANY, 4890 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:02,114 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 4.0 (TID 9) (198.202.103.194, executor 1, partition 1, ANY, 4890 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:02,267 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 198.202.103.194:38899 (size: 5.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:02,269 INFO storage.BlockManagerInfo: Added broadcast_5_piece0 in memory on 198.202.103.194:38485 (size: 5.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:02,520 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 198.202.103.194:38485 (size: 27.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:02,521 INFO storage.BlockManagerInfo: Added broadcast_0_piece0 in memory on 198.202.103.194:38899 (size: 27.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:03,349 INFO storage.BlockManagerInfo: Added rdd_16_0 in memory on 198.202.103.194:38485 (size: 13.4 MiB, free: 14.2 GiB)
+2022-12-01 15:41:03,360 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 198.202.103.194:54028
+2022-12-01 15:41:03,409 INFO storage.BlockManagerInfo: Added rdd_16_1 in memory on 198.202.103.194:38899 (size: 13.4 MiB, free: 14.2 GiB)
+2022-12-01 15:41:03,420 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 198.202.103.194:54032
+2022-12-01 15:41:03,423 INFO storage.BlockManagerInfo: Added rdd_24_0 in memory on 198.202.103.194:38485 (size: 13.4 MiB, free: 14.2 GiB)
+2022-12-01 15:41:03,425 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 198.202.103.194:54028
+2022-12-01 15:41:03,486 INFO storage.BlockManagerInfo: Added rdd_24_1 in memory on 198.202.103.194:38899 (size: 13.4 MiB, free: 14.2 GiB)
+2022-12-01 15:41:03,488 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 198.202.103.194:54032
+2022-12-01 15:41:03,901 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 4.0 (TID 8) in 1788 ms on 198.202.103.194 (executor 7) (1/2)
+2022-12-01 15:41:03,975 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 4.0 (TID 9) in 1861 ms on 198.202.103.194 (executor 1) (2/2)
+2022-12-01 15:41:03,976 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:03,977 INFO scheduler.DAGScheduler: ShuffleMapStage 4 (mapPartitions at GraphImpl.scala:208) finished in 1.874 s
+2022-12-01 15:41:03,977 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:03,977 INFO scheduler.DAGScheduler: running: Set()
+2022-12-01 15:41:03,977 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 5)
+2022-12-01 15:41:03,977 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:03,978 INFO scheduler.DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[34] at map at VertexRDDImpl.scala:90), which has no missing parents
+2022-12-01 15:41:03,981 INFO memory.MemoryStore: Block broadcast_6 stored as values in memory (estimated size 9.7 KiB, free 434.1 MiB)
+2022-12-01 15:41:03,983 INFO memory.MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 4.8 KiB, free 434.1 MiB)
+2022-12-01 15:41:03,984 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 4.8 KiB, free: 434.3 MiB)
+2022-12-01 15:41:03,984 INFO spark.SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:03,985 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ResultStage 5 (MapPartitionsRDD[34] at map at VertexRDDImpl.scala:90) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:03,986 INFO scheduler.TaskSchedulerImpl: Adding task set 5.0 with 2 tasks resource profile 0
+2022-12-01 15:41:03,989 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 5.0 (TID 10) (198.202.103.194, executor 0, partition 0, PROCESS_LOCAL, 4588 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:03,989 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 5.0 (TID 11) (198.202.103.194, executor 8, partition 1, PROCESS_LOCAL, 4588 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:04,009 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 198.202.103.194:46507 (size: 4.8 KiB, free: 14.2 GiB)
+2022-12-01 15:41:04,009 INFO storage.BlockManagerInfo: Added broadcast_6_piece0 in memory on 198.202.103.194:40573 (size: 4.8 KiB, free: 14.2 GiB)
+2022-12-01 15:41:04,046 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 3 to 198.202.103.194:54036
+2022-12-01 15:41:04,046 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 3 to 198.202.103.194:54022
+2022-12-01 15:41:04,100 INFO storage.BlockManagerInfo: Added rdd_32_1 in memory on 198.202.103.194:40573 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:04,101 INFO storage.BlockManagerInfo: Added rdd_32_0 in memory on 198.202.103.194:46507 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:04,105 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 5.0 (TID 11) in 116 ms on 198.202.103.194 (executor 8) (1/2)
+2022-12-01 15:41:04,106 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 5.0 (TID 10) in 118 ms on 198.202.103.194 (executor 0) (2/2)
+2022-12-01 15:41:04,106 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:04,107 INFO scheduler.DAGScheduler: ResultStage 5 (fold at VertexRDDImpl.scala:90) finished in 0.126 s
+2022-12-01 15:41:04,109 INFO scheduler.DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+2022-12-01 15:41:04,109 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 5: Stage finished
+2022-12-01 15:41:04,111 INFO scheduler.DAGScheduler: Job 0 finished: fold at VertexRDDImpl.scala:90, took 6.100509 s
+2022-12-01 15:41:04,142 INFO spark.SparkContext: Starting job: fold at VertexRDDImpl.scala:90
+2022-12-01 15:41:04,146 INFO scheduler.DAGScheduler: Registering RDD 43 (mapPartitions at VertexRDDImpl.scala:251) as input to shuffle 6
+2022-12-01 15:41:04,147 INFO scheduler.DAGScheduler: Registering RDD 39 (mapPartitions at VertexRDDImpl.scala:247) as input to shuffle 5
+2022-12-01 15:41:04,147 INFO scheduler.DAGScheduler: Registering RDD 47 (mapPartitions at GraphImpl.scala:208) as input to shuffle 7
+2022-12-01 15:41:04,147 INFO scheduler.DAGScheduler: Got job 1 (fold at VertexRDDImpl.scala:90) with 2 output partitions
+2022-12-01 15:41:04,147 INFO scheduler.DAGScheduler: Final stage: ResultStage 14 (fold at VertexRDDImpl.scala:90)
+2022-12-01 15:41:04,147 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 13, ShuffleMapStage 6, ShuffleMapStage 10, ShuffleMapStage 7)
+2022-12-01 15:41:04,149 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 13)
+2022-12-01 15:41:04,150 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 11 (ReplicatedVertexView.withActiveSet - shippedActives (broadcast) MapPartitionsRDD[43] at mapPartitions at VertexRDDImpl.scala:251), which has no missing parents
+2022-12-01 15:41:04,153 INFO memory.MemoryStore: Block broadcast_7 stored as values in memory (estimated size 9.1 KiB, free 434.1 MiB)
+2022-12-01 15:41:04,154 INFO memory.MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 4.6 KiB, free 434.1 MiB)
+2022-12-01 15:41:04,155 INFO storage.BlockManagerInfo: Added broadcast_7_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 4.6 KiB, free: 434.3 MiB)
+2022-12-01 15:41:04,155 INFO spark.SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:04,156 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 11 (ReplicatedVertexView.withActiveSet - shippedActives (broadcast) MapPartitionsRDD[43] at mapPartitions at VertexRDDImpl.scala:251) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:04,156 INFO scheduler.TaskSchedulerImpl: Adding task set 11.0 with 2 tasks resource profile 0
+2022-12-01 15:41:04,157 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 12 (ReplicatedVertexView.updateVertices - shippedVerts true true (broadcast) MapPartitionsRDD[39] at mapPartitions at VertexRDDImpl.scala:247), which has no missing parents
+2022-12-01 15:41:04,158 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 11.0 (TID 12) (198.202.103.194, executor 8, partition 1, PROCESS_LOCAL, 4577 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:04,160 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 11.0 (TID 13) (198.202.103.194, executor 0, partition 0, PROCESS_LOCAL, 4577 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:04,161 INFO memory.MemoryStore: Block broadcast_8 stored as values in memory (estimated size 10.3 KiB, free 434.1 MiB)
+2022-12-01 15:41:04,162 INFO memory.MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 4.9 KiB, free 434.1 MiB)
+2022-12-01 15:41:04,163 INFO storage.BlockManagerInfo: Added broadcast_8_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 4.9 KiB, free: 434.3 MiB)
+2022-12-01 15:41:04,163 INFO spark.SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:04,164 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 12 (ReplicatedVertexView.updateVertices - shippedVerts true true (broadcast) MapPartitionsRDD[39] at mapPartitions at VertexRDDImpl.scala:247) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:04,164 INFO scheduler.TaskSchedulerImpl: Adding task set 12.0 with 2 tasks resource profile 0
+2022-12-01 15:41:04,165 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 12.0 (TID 14) (198.202.103.194, executor 0, partition 0, PROCESS_LOCAL, 4641 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:04,166 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 12.0 (TID 15) (198.202.103.194, executor 8, partition 1, PROCESS_LOCAL, 4641 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:04,179 INFO storage.BlockManagerInfo: Added broadcast_7_piece0 in memory on 198.202.103.194:46507 (size: 4.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:04,181 INFO storage.BlockManagerInfo: Added broadcast_7_piece0 in memory on 198.202.103.194:40573 (size: 4.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:04,183 INFO storage.BlockManagerInfo: Added broadcast_8_piece0 in memory on 198.202.103.194:40573 (size: 4.9 KiB, free: 14.2 GiB)
+2022-12-01 15:41:04,183 INFO storage.BlockManagerInfo: Added broadcast_8_piece0 in memory on 198.202.103.194:46507 (size: 4.9 KiB, free: 14.2 GiB)
+2022-12-01 15:41:04,213 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 11.0 (TID 13) in 53 ms on 198.202.103.194 (executor 0) (1/2)
+2022-12-01 15:41:04,216 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 11.0 (TID 12) in 59 ms on 198.202.103.194 (executor 8) (2/2)
+2022-12-01 15:41:04,216 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 11.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:04,217 INFO scheduler.DAGScheduler: ShuffleMapStage 11 (mapPartitions at VertexRDDImpl.scala:251) finished in 0.065 s
+2022-12-01 15:41:04,217 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:04,217 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 12)
+2022-12-01 15:41:04,217 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 13, ResultStage 14)
+2022-12-01 15:41:04,217 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:04,226 INFO storage.BlockManagerInfo: Added rdd_35_0 in memory on 198.202.103.194:46507 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:04,227 INFO storage.BlockManagerInfo: Added rdd_35_1 in memory on 198.202.103.194:40573 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:04,262 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 12.0 (TID 14) in 96 ms on 198.202.103.194 (executor 0) (1/2)
+2022-12-01 15:41:04,263 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 12.0 (TID 15) in 97 ms on 198.202.103.194 (executor 8) (2/2)
+2022-12-01 15:41:04,263 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 12.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:04,264 INFO scheduler.DAGScheduler: ShuffleMapStage 12 (mapPartitions at VertexRDDImpl.scala:247) finished in 0.105 s
+2022-12-01 15:41:04,264 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:04,264 INFO scheduler.DAGScheduler: running: Set()
+2022-12-01 15:41:04,264 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 13, ResultStage 14)
+2022-12-01 15:41:04,264 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:04,265 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 13 (GraphImpl.aggregateMessages - preAgg MapPartitionsRDD[47] at mapPartitions at GraphImpl.scala:208), which has no missing parents
+2022-12-01 15:41:04,269 INFO memory.MemoryStore: Block broadcast_9 stored as values in memory (estimated size 12.1 KiB, free 434.1 MiB)
+2022-12-01 15:41:04,270 INFO memory.MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 5.8 KiB, free 434.1 MiB)
+2022-12-01 15:41:04,271 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 5.8 KiB, free: 434.3 MiB)
+2022-12-01 15:41:04,271 INFO spark.SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:04,272 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 13 (GraphImpl.aggregateMessages - preAgg MapPartitionsRDD[47] at mapPartitions at GraphImpl.scala:208) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:04,272 INFO scheduler.TaskSchedulerImpl: Adding task set 13.0 with 2 tasks resource profile 0
+2022-12-01 15:41:04,274 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 13.0 (TID 16) (198.202.103.194, executor 1, partition 1, PROCESS_LOCAL, 4972 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:04,274 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 13.0 (TID 17) (198.202.103.194, executor 7, partition 0, PROCESS_LOCAL, 4972 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:04,297 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on 198.202.103.194:38485 (size: 5.8 KiB, free: 14.2 GiB)
+2022-12-01 15:41:04,297 INFO storage.BlockManagerInfo: Added broadcast_9_piece0 in memory on 198.202.103.194:38899 (size: 5.8 KiB, free: 14.2 GiB)
+2022-12-01 15:41:04,306 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 198.202.103.194:54028
+2022-12-01 15:41:04,308 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 2 to 198.202.103.194:54032
+2022-12-01 15:41:04,309 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 5 to 198.202.103.194:54028
+2022-12-01 15:41:04,312 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 5 to 198.202.103.194:54032
+2022-12-01 15:41:04,337 INFO storage.BlockManagerInfo: Added rdd_41_0 in memory on 198.202.103.194:38485 (size: 13.4 MiB, free: 14.2 GiB)
+2022-12-01 15:41:04,338 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 6 to 198.202.103.194:54028
+2022-12-01 15:41:04,344 INFO storage.BlockManagerInfo: Added rdd_41_1 in memory on 198.202.103.194:38899 (size: 13.4 MiB, free: 14.2 GiB)
+2022-12-01 15:41:04,345 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 6 to 198.202.103.194:54032
+2022-12-01 15:41:04,487 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 13.0 (TID 17) in 213 ms on 198.202.103.194 (executor 7) (1/2)
+2022-12-01 15:41:04,502 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 13.0 (TID 16) in 229 ms on 198.202.103.194 (executor 1) (2/2)
+2022-12-01 15:41:04,502 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 13.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:04,503 INFO scheduler.DAGScheduler: ShuffleMapStage 13 (mapPartitions at GraphImpl.scala:208) finished in 0.237 s
+2022-12-01 15:41:04,503 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:04,503 INFO scheduler.DAGScheduler: running: Set()
+2022-12-01 15:41:04,503 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 14)
+2022-12-01 15:41:04,503 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:04,504 INFO scheduler.DAGScheduler: Submitting ResultStage 14 (MapPartitionsRDD[51] at map at VertexRDDImpl.scala:90), which has no missing parents
+2022-12-01 15:41:04,508 INFO memory.MemoryStore: Block broadcast_10 stored as values in memory (estimated size 10.7 KiB, free 434.1 MiB)
+2022-12-01 15:41:04,509 INFO memory.MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 5.1 KiB, free 434.1 MiB)
+2022-12-01 15:41:04,510 INFO storage.BlockManagerInfo: Added broadcast_10_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 5.1 KiB, free: 434.3 MiB)
+2022-12-01 15:41:04,510 INFO spark.SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:04,511 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ResultStage 14 (MapPartitionsRDD[51] at map at VertexRDDImpl.scala:90) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:04,511 INFO scheduler.TaskSchedulerImpl: Adding task set 14.0 with 2 tasks resource profile 0
+2022-12-01 15:41:04,513 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 14.0 (TID 18) (198.202.103.194, executor 8, partition 1, PROCESS_LOCAL, 4661 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:04,513 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 14.0 (TID 19) (198.202.103.194, executor 0, partition 0, PROCESS_LOCAL, 4661 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:04,525 INFO storage.BlockManagerInfo: Added broadcast_10_piece0 in memory on 198.202.103.194:46507 (size: 5.1 KiB, free: 14.2 GiB)
+2022-12-01 15:41:04,527 INFO storage.BlockManagerInfo: Added broadcast_10_piece0 in memory on 198.202.103.194:40573 (size: 5.1 KiB, free: 14.2 GiB)
+2022-12-01 15:41:04,532 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 7 to 198.202.103.194:54036
+2022-12-01 15:41:04,534 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 7 to 198.202.103.194:54022
+2022-12-01 15:41:04,567 INFO storage.BlockManagerInfo: Added rdd_49_0 in memory on 198.202.103.194:46507 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:04,570 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 14.0 (TID 19) in 57 ms on 198.202.103.194 (executor 0) (1/2)
+2022-12-01 15:41:04,582 INFO storage.BlockManagerInfo: Added rdd_49_1 in memory on 198.202.103.194:40573 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:04,586 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 14.0 (TID 18) in 74 ms on 198.202.103.194 (executor 8) (2/2)
+2022-12-01 15:41:04,586 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 14.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:04,587 INFO scheduler.DAGScheduler: ResultStage 14 (fold at VertexRDDImpl.scala:90) finished in 0.082 s
+2022-12-01 15:41:04,588 INFO scheduler.DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+2022-12-01 15:41:04,588 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 14: Stage finished
+2022-12-01 15:41:04,588 INFO scheduler.DAGScheduler: Job 1 finished: fold at VertexRDDImpl.scala:90, took 0.445881 s
+2022-12-01 15:41:04,590 INFO graphx.Pregel: Pregel finished iteration 0
+2022-12-01 15:41:04,590 INFO rdd.ZippedPartitionsRDD2: Removing RDD 32 from persistence list
+2022-12-01 15:41:04,604 INFO storage.BlockManager: Removing RDD 32
+2022-12-01 15:41:04,608 INFO rdd.MapPartitionsRDD: Removing RDD 18 from persistence list
+2022-12-01 15:41:04,611 INFO storage.BlockManager: Removing RDD 18
+2022-12-01 15:41:04,611 INFO rdd.ZippedPartitionsRDD2: Removing RDD 24 from persistence list
+2022-12-01 15:41:04,614 INFO storage.BlockManager: Removing RDD 24
+2022-12-01 15:41:04,637 INFO spark.SparkContext: Starting job: fold at VertexRDDImpl.scala:90
+2022-12-01 15:41:04,643 INFO scheduler.DAGScheduler: Registering RDD 60 (mapPartitions at VertexRDDImpl.scala:251) as input to shuffle 9
+2022-12-01 15:41:04,643 INFO scheduler.DAGScheduler: Registering RDD 56 (mapPartitions at VertexRDDImpl.scala:247) as input to shuffle 8
+2022-12-01 15:41:04,644 INFO scheduler.DAGScheduler: Registering RDD 64 (mapPartitions at GraphImpl.scala:208) as input to shuffle 10
+2022-12-01 15:41:04,644 INFO scheduler.DAGScheduler: Got job 2 (fold at VertexRDDImpl.scala:90) with 2 output partitions
+2022-12-01 15:41:04,644 INFO scheduler.DAGScheduler: Final stage: ResultStage 26 (fold at VertexRDDImpl.scala:90)
+2022-12-01 15:41:04,644 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 15, ShuffleMapStage 19, ShuffleMapStage 16, ShuffleMapStage 25, ShuffleMapStage 22)
+2022-12-01 15:41:04,645 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 25)
+2022-12-01 15:41:04,647 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 23 (ReplicatedVertexView.withActiveSet - shippedActives (broadcast) MapPartitionsRDD[60] at mapPartitions at VertexRDDImpl.scala:251), which has no missing parents
+2022-12-01 15:41:04,650 INFO memory.MemoryStore: Block broadcast_11 stored as values in memory (estimated size 10.1 KiB, free 434.1 MiB)
+2022-12-01 15:41:04,651 INFO memory.MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 4.9 KiB, free 434.0 MiB)
+2022-12-01 15:41:04,652 INFO storage.BlockManagerInfo: Added broadcast_11_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 4.9 KiB, free: 434.3 MiB)
+2022-12-01 15:41:04,652 INFO spark.SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:04,652 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 23 (ReplicatedVertexView.withActiveSet - shippedActives (broadcast) MapPartitionsRDD[60] at mapPartitions at VertexRDDImpl.scala:251) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:04,652 INFO scheduler.TaskSchedulerImpl: Adding task set 23.0 with 2 tasks resource profile 0
+2022-12-01 15:41:04,653 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 24 (ReplicatedVertexView.updateVertices - shippedVerts true true (broadcast) MapPartitionsRDD[56] at mapPartitions at VertexRDDImpl.scala:247), which has no missing parents
+2022-12-01 15:41:04,654 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 23.0 (TID 20) (198.202.103.194, executor 0, partition 0, PROCESS_LOCAL, 4650 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:04,657 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 23.0 (TID 21) (198.202.103.194, executor 8, partition 1, PROCESS_LOCAL, 4650 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:04,657 INFO memory.MemoryStore: Block broadcast_12 stored as values in memory (estimated size 10.9 KiB, free 434.0 MiB)
+2022-12-01 15:41:04,658 INFO memory.MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 5.2 KiB, free 434.0 MiB)
+2022-12-01 15:41:04,659 INFO storage.BlockManagerInfo: Added broadcast_12_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 5.2 KiB, free: 434.3 MiB)
+2022-12-01 15:41:04,659 INFO spark.SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:04,660 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 24 (ReplicatedVertexView.updateVertices - shippedVerts true true (broadcast) MapPartitionsRDD[56] at mapPartitions at VertexRDDImpl.scala:247) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:04,660 INFO scheduler.TaskSchedulerImpl: Adding task set 24.0 with 2 tasks resource profile 0
+2022-12-01 15:41:04,661 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 24.0 (TID 22) (198.202.103.194, executor 0, partition 0, PROCESS_LOCAL, 4714 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:04,661 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 24.0 (TID 23) (198.202.103.194, executor 8, partition 1, PROCESS_LOCAL, 4714 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:04,670 INFO storage.BlockManagerInfo: Added broadcast_11_piece0 in memory on 198.202.103.194:40573 (size: 4.9 KiB, free: 14.2 GiB)
+2022-12-01 15:41:04,671 INFO storage.BlockManagerInfo: Added broadcast_12_piece0 in memory on 198.202.103.194:40573 (size: 5.2 KiB, free: 14.2 GiB)
+2022-12-01 15:41:04,672 INFO storage.BlockManagerInfo: Added broadcast_11_piece0 in memory on 198.202.103.194:46507 (size: 4.9 KiB, free: 14.2 GiB)
+2022-12-01 15:41:04,672 INFO storage.BlockManagerInfo: Added broadcast_12_piece0 in memory on 198.202.103.194:46507 (size: 5.2 KiB, free: 14.2 GiB)
+2022-12-01 15:41:04,695 INFO storage.BlockManagerInfo: Added rdd_52_0 in memory on 198.202.103.194:46507 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:04,700 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 23.0 (TID 20) in 46 ms on 198.202.103.194 (executor 0) (1/2)
+2022-12-01 15:41:04,706 INFO storage.BlockManagerInfo: Added rdd_52_1 in memory on 198.202.103.194:40573 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:04,712 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 23.0 (TID 21) in 55 ms on 198.202.103.194 (executor 8) (2/2)
+2022-12-01 15:41:04,712 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 23.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:04,712 INFO scheduler.DAGScheduler: ShuffleMapStage 23 (mapPartitions at VertexRDDImpl.scala:251) finished in 0.064 s
+2022-12-01 15:41:04,712 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:04,712 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 24)
+2022-12-01 15:41:04,713 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 25, ResultStage 26)
+2022-12-01 15:41:04,713 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:04,720 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 24.0 (TID 22) in 59 ms on 198.202.103.194 (executor 0) (1/2)
+2022-12-01 15:41:04,728 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 24.0 (TID 23) in 67 ms on 198.202.103.194 (executor 8) (2/2)
+2022-12-01 15:41:04,728 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 24.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:04,729 INFO scheduler.DAGScheduler: ShuffleMapStage 24 (mapPartitions at VertexRDDImpl.scala:247) finished in 0.075 s
+2022-12-01 15:41:04,729 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:04,729 INFO scheduler.DAGScheduler: running: Set()
+2022-12-01 15:41:04,729 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 25, ResultStage 26)
+2022-12-01 15:41:04,729 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:04,729 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 25 (GraphImpl.aggregateMessages - preAgg MapPartitionsRDD[64] at mapPartitions at GraphImpl.scala:208), which has no missing parents
+2022-12-01 15:41:04,735 INFO memory.MemoryStore: Block broadcast_13 stored as values in memory (estimated size 12.4 KiB, free 434.0 MiB)
+2022-12-01 15:41:04,736 INFO memory.MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 5.9 KiB, free 434.0 MiB)
+2022-12-01 15:41:04,737 INFO storage.BlockManagerInfo: Added broadcast_13_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 5.9 KiB, free: 434.3 MiB)
+2022-12-01 15:41:04,737 INFO spark.SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:04,737 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 25 (GraphImpl.aggregateMessages - preAgg MapPartitionsRDD[64] at mapPartitions at GraphImpl.scala:208) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:04,737 INFO scheduler.TaskSchedulerImpl: Adding task set 25.0 with 2 tasks resource profile 0
+2022-12-01 15:41:04,739 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 25.0 (TID 24) (198.202.103.194, executor 1, partition 1, PROCESS_LOCAL, 5013 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:04,739 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 25.0 (TID 25) (198.202.103.194, executor 7, partition 0, PROCESS_LOCAL, 5013 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:04,753 INFO storage.BlockManagerInfo: Added broadcast_13_piece0 in memory on 198.202.103.194:38899 (size: 5.9 KiB, free: 14.2 GiB)
+2022-12-01 15:41:04,754 INFO storage.BlockManagerInfo: Added broadcast_13_piece0 in memory on 198.202.103.194:38485 (size: 5.9 KiB, free: 14.2 GiB)
+2022-12-01 15:41:04,760 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 8 to 198.202.103.194:54032
+2022-12-01 15:41:04,760 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 8 to 198.202.103.194:54028
+2022-12-01 15:41:04,774 INFO storage.BlockManagerInfo: Added rdd_58_0 in memory on 198.202.103.194:38485 (size: 13.4 MiB, free: 14.2 GiB)
+2022-12-01 15:41:04,776 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 9 to 198.202.103.194:54028
+2022-12-01 15:41:04,776 INFO storage.BlockManagerInfo: Added rdd_58_1 in memory on 198.202.103.194:38899 (size: 13.4 MiB, free: 14.2 GiB)
+2022-12-01 15:41:04,777 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 9 to 198.202.103.194:54032
+2022-12-01 15:41:04,900 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 25.0 (TID 25) in 160 ms on 198.202.103.194 (executor 7) (1/2)
+2022-12-01 15:41:04,907 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 25.0 (TID 24) in 168 ms on 198.202.103.194 (executor 1) (2/2)
+2022-12-01 15:41:04,907 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 25.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:04,908 INFO scheduler.DAGScheduler: ShuffleMapStage 25 (mapPartitions at GraphImpl.scala:208) finished in 0.178 s
+2022-12-01 15:41:04,908 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:04,908 INFO scheduler.DAGScheduler: running: Set()
+2022-12-01 15:41:04,908 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 26)
+2022-12-01 15:41:04,908 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:04,909 INFO scheduler.DAGScheduler: Submitting ResultStage 26 (MapPartitionsRDD[68] at map at VertexRDDImpl.scala:90), which has no missing parents
+2022-12-01 15:41:04,911 INFO memory.MemoryStore: Block broadcast_14 stored as values in memory (estimated size 11.3 KiB, free 434.0 MiB)
+2022-12-01 15:41:04,913 INFO memory.MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 5.3 KiB, free 434.0 MiB)
+2022-12-01 15:41:04,913 INFO storage.BlockManagerInfo: Added broadcast_14_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 5.3 KiB, free: 434.3 MiB)
+2022-12-01 15:41:04,914 INFO spark.SparkContext: Created broadcast 14 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:04,914 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ResultStage 26 (MapPartitionsRDD[68] at map at VertexRDDImpl.scala:90) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:04,914 INFO scheduler.TaskSchedulerImpl: Adding task set 26.0 with 2 tasks resource profile 0
+2022-12-01 15:41:04,916 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 26.0 (TID 26) (198.202.103.194, executor 8, partition 1, PROCESS_LOCAL, 4734 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:04,916 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 26.0 (TID 27) (198.202.103.194, executor 0, partition 0, PROCESS_LOCAL, 4734 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:04,927 INFO storage.BlockManagerInfo: Added broadcast_14_piece0 in memory on 198.202.103.194:40573 (size: 5.3 KiB, free: 14.2 GiB)
+2022-12-01 15:41:04,930 INFO storage.BlockManagerInfo: Added broadcast_14_piece0 in memory on 198.202.103.194:46507 (size: 5.3 KiB, free: 14.2 GiB)
+2022-12-01 15:41:04,933 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 10 to 198.202.103.194:54022
+2022-12-01 15:41:04,935 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 10 to 198.202.103.194:54036
+2022-12-01 15:41:04,968 INFO storage.BlockManagerInfo: Added rdd_66_0 in memory on 198.202.103.194:46507 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:04,969 INFO storage.BlockManagerInfo: Added rdd_66_1 in memory on 198.202.103.194:40573 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:04,972 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 26.0 (TID 27) in 56 ms on 198.202.103.194 (executor 0) (1/2)
+2022-12-01 15:41:04,974 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 26.0 (TID 26) in 58 ms on 198.202.103.194 (executor 8) (2/2)
+2022-12-01 15:41:04,974 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 26.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:04,974 INFO scheduler.DAGScheduler: ResultStage 26 (fold at VertexRDDImpl.scala:90) finished in 0.064 s
+2022-12-01 15:41:04,975 INFO scheduler.DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+2022-12-01 15:41:04,975 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 26: Stage finished
+2022-12-01 15:41:04,975 INFO scheduler.DAGScheduler: Job 2 finished: fold at VertexRDDImpl.scala:90, took 0.337451 s
+2022-12-01 15:41:04,976 INFO graphx.Pregel: Pregel finished iteration 1
+2022-12-01 15:41:04,976 INFO rdd.ZippedPartitionsRDD2: Removing RDD 49 from persistence list
+2022-12-01 15:41:04,978 INFO rdd.ZippedPartitionsRDD2: Removing RDD 35 from persistence list
+2022-12-01 15:41:04,979 INFO storage.BlockManager: Removing RDD 49
+2022-12-01 15:41:04,980 INFO storage.BlockManager: Removing RDD 35
+2022-12-01 15:41:04,980 INFO rdd.ZippedPartitionsRDD2: Removing RDD 41 from persistence list
+2022-12-01 15:41:04,982 INFO storage.BlockManager: Removing RDD 41
+2022-12-01 15:41:04,989 INFO rdd.MapPartitionsRDD: Removing RDD 18 from persistence list
+2022-12-01 15:41:04,991 INFO storage.BlockManager: Removing RDD 18
+2022-12-01 15:41:04,991 INFO rdd.ZippedPartitionsRDD2: Removing RDD 28 from persistence list
+2022-12-01 15:41:04,992 INFO storage.BlockManager: Removing RDD 28
+2022-12-01 15:41:05,001 INFO rdd.ZippedPartitionsRDD2: Removing RDD 32 from persistence list
+2022-12-01 15:41:05,002 INFO storage.BlockManager: Removing RDD 32
+2022-12-01 15:41:05,011 INFO spark.SparkContext: Starting job: fold at VertexRDDImpl.scala:90
+2022-12-01 15:41:05,015 INFO scheduler.DAGScheduler: Registering RDD 73 (mapPartitions at VertexRDDImpl.scala:247) as input to shuffle 11
+2022-12-01 15:41:05,015 INFO scheduler.DAGScheduler: Registering RDD 77 (mapPartitions at VertexRDDImpl.scala:251) as input to shuffle 12
+2022-12-01 15:41:05,015 INFO scheduler.DAGScheduler: Registering RDD 81 (mapPartitions at GraphImpl.scala:208) as input to shuffle 13
+2022-12-01 15:41:05,016 INFO scheduler.DAGScheduler: Got job 3 (fold at VertexRDDImpl.scala:90) with 2 output partitions
+2022-12-01 15:41:05,016 INFO scheduler.DAGScheduler: Final stage: ResultStage 41 (fold at VertexRDDImpl.scala:90)
+2022-12-01 15:41:05,016 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 27, ShuffleMapStage 37, ShuffleMapStage 34, ShuffleMapStage 31, ShuffleMapStage 28, ShuffleMapStage 40)
+2022-12-01 15:41:05,016 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 40)
+2022-12-01 15:41:05,018 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 38 (ReplicatedVertexView.updateVertices - shippedVerts true true (broadcast) MapPartitionsRDD[73] at mapPartitions at VertexRDDImpl.scala:247), which has no missing parents
+2022-12-01 15:41:05,020 INFO memory.MemoryStore: Block broadcast_15 stored as values in memory (estimated size 11.5 KiB, free 434.0 MiB)
+2022-12-01 15:41:05,022 INFO memory.MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 5.3 KiB, free 434.0 MiB)
+2022-12-01 15:41:05,022 INFO storage.BlockManagerInfo: Added broadcast_15_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 5.3 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,022 INFO spark.SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:05,023 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 38 (ReplicatedVertexView.updateVertices - shippedVerts true true (broadcast) MapPartitionsRDD[73] at mapPartitions at VertexRDDImpl.scala:247) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:05,023 INFO scheduler.TaskSchedulerImpl: Adding task set 38.0 with 2 tasks resource profile 0
+2022-12-01 15:41:05,024 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 39 (ReplicatedVertexView.withActiveSet - shippedActives (broadcast) MapPartitionsRDD[77] at mapPartitions at VertexRDDImpl.scala:251), which has no missing parents
+2022-12-01 15:41:05,025 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 38.0 (TID 28) (198.202.103.194, executor 0, partition 0, PROCESS_LOCAL, 4787 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,025 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 38.0 (TID 29) (198.202.103.194, executor 8, partition 1, PROCESS_LOCAL, 4787 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,025 INFO memory.MemoryStore: Block broadcast_16 stored as values in memory (estimated size 10.8 KiB, free 434.0 MiB)
+2022-12-01 15:41:05,028 INFO memory.MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 5.1 KiB, free 434.0 MiB)
+2022-12-01 15:41:05,028 INFO storage.BlockManagerInfo: Added broadcast_16_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 5.1 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,029 INFO spark.SparkContext: Created broadcast 16 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:05,030 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 39 (ReplicatedVertexView.withActiveSet - shippedActives (broadcast) MapPartitionsRDD[77] at mapPartitions at VertexRDDImpl.scala:251) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:05,030 INFO scheduler.TaskSchedulerImpl: Adding task set 39.0 with 2 tasks resource profile 0
+2022-12-01 15:41:05,031 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 39.0 (TID 30) (198.202.103.194, executor 8, partition 1, PROCESS_LOCAL, 4723 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,031 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 39.0 (TID 31) (198.202.103.194, executor 0, partition 0, PROCESS_LOCAL, 4723 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,035 INFO storage.BlockManagerInfo: Added broadcast_15_piece0 in memory on 198.202.103.194:46507 (size: 5.3 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,036 INFO storage.BlockManagerInfo: Added broadcast_15_piece0 in memory on 198.202.103.194:40573 (size: 5.3 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,040 INFO storage.BlockManagerInfo: Added broadcast_16_piece0 in memory on 198.202.103.194:40573 (size: 5.1 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,041 INFO storage.BlockManagerInfo: Added broadcast_16_piece0 in memory on 198.202.103.194:46507 (size: 5.1 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,049 INFO storage.BlockManagerInfo: Added rdd_69_1 in memory on 198.202.103.194:40573 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:05,067 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 39.0 (TID 30) in 36 ms on 198.202.103.194 (executor 8) (1/2)
+2022-12-01 15:41:05,068 INFO storage.BlockManagerInfo: Added rdd_69_0 in memory on 198.202.103.194:46507 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:05,068 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 38.0 (TID 29) in 43 ms on 198.202.103.194 (executor 8) (1/2)
+2022-12-01 15:41:05,079 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 39.0 (TID 31) in 48 ms on 198.202.103.194 (executor 0) (2/2)
+2022-12-01 15:41:05,079 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 39.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:05,080 INFO scheduler.DAGScheduler: ShuffleMapStage 39 (mapPartitions at VertexRDDImpl.scala:251) finished in 0.056 s
+2022-12-01 15:41:05,080 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:05,080 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 38)
+2022-12-01 15:41:05,080 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 40, ResultStage 41)
+2022-12-01 15:41:05,080 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:05,085 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 38.0 (TID 28) in 61 ms on 198.202.103.194 (executor 0) (2/2)
+2022-12-01 15:41:05,085 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 38.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:05,085 INFO scheduler.DAGScheduler: ShuffleMapStage 38 (mapPartitions at VertexRDDImpl.scala:247) finished in 0.066 s
+2022-12-01 15:41:05,085 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:05,085 INFO scheduler.DAGScheduler: running: Set()
+2022-12-01 15:41:05,085 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 40, ResultStage 41)
+2022-12-01 15:41:05,085 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:05,086 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 40 (GraphImpl.aggregateMessages - preAgg MapPartitionsRDD[81] at mapPartitions at GraphImpl.scala:208), which has no missing parents
+2022-12-01 15:41:05,088 INFO memory.MemoryStore: Block broadcast_17 stored as values in memory (estimated size 12.7 KiB, free 434.0 MiB)
+2022-12-01 15:41:05,089 INFO memory.MemoryStore: Block broadcast_17_piece0 stored as bytes in memory (estimated size 6.0 KiB, free 433.9 MiB)
+2022-12-01 15:41:05,089 INFO storage.BlockManagerInfo: Added broadcast_17_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 6.0 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,090 INFO spark.SparkContext: Created broadcast 17 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:05,090 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 40 (GraphImpl.aggregateMessages - preAgg MapPartitionsRDD[81] at mapPartitions at GraphImpl.scala:208) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:05,090 INFO scheduler.TaskSchedulerImpl: Adding task set 40.0 with 2 tasks resource profile 0
+2022-12-01 15:41:05,091 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 40.0 (TID 32) (198.202.103.194, executor 7, partition 0, PROCESS_LOCAL, 5054 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,092 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 40.0 (TID 33) (198.202.103.194, executor 1, partition 1, PROCESS_LOCAL, 5054 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,105 INFO storage.BlockManagerInfo: Added broadcast_17_piece0 in memory on 198.202.103.194:38485 (size: 6.0 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,106 INFO storage.BlockManagerInfo: Added broadcast_17_piece0 in memory on 198.202.103.194:38899 (size: 6.0 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,111 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 11 to 198.202.103.194:54028
+2022-12-01 15:41:05,112 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 11 to 198.202.103.194:54032
+2022-12-01 15:41:05,125 INFO storage.BlockManagerInfo: Added rdd_75_0 in memory on 198.202.103.194:38485 (size: 13.4 MiB, free: 14.2 GiB)
+2022-12-01 15:41:05,126 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 12 to 198.202.103.194:54028
+2022-12-01 15:41:05,127 INFO storage.BlockManagerInfo: Added rdd_75_1 in memory on 198.202.103.194:38899 (size: 13.4 MiB, free: 14.2 GiB)
+2022-12-01 15:41:05,128 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 12 to 198.202.103.194:54032
+2022-12-01 15:41:05,228 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 40.0 (TID 32) in 137 ms on 198.202.103.194 (executor 7) (1/2)
+2022-12-01 15:41:05,234 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 40.0 (TID 33) in 143 ms on 198.202.103.194 (executor 1) (2/2)
+2022-12-01 15:41:05,234 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 40.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:05,235 INFO scheduler.DAGScheduler: ShuffleMapStage 40 (mapPartitions at GraphImpl.scala:208) finished in 0.149 s
+2022-12-01 15:41:05,235 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:05,235 INFO scheduler.DAGScheduler: running: Set()
+2022-12-01 15:41:05,235 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 41)
+2022-12-01 15:41:05,235 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:05,236 INFO scheduler.DAGScheduler: Submitting ResultStage 41 (MapPartitionsRDD[85] at map at VertexRDDImpl.scala:90), which has no missing parents
+2022-12-01 15:41:05,238 INFO memory.MemoryStore: Block broadcast_18 stored as values in memory (estimated size 12.0 KiB, free 433.9 MiB)
+2022-12-01 15:41:05,240 INFO memory.MemoryStore: Block broadcast_18_piece0 stored as bytes in memory (estimated size 5.3 KiB, free 433.9 MiB)
+2022-12-01 15:41:05,240 INFO storage.BlockManagerInfo: Added broadcast_18_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 5.3 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,241 INFO spark.SparkContext: Created broadcast 18 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:05,241 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ResultStage 41 (MapPartitionsRDD[85] at map at VertexRDDImpl.scala:90) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:05,241 INFO scheduler.TaskSchedulerImpl: Adding task set 41.0 with 2 tasks resource profile 0
+2022-12-01 15:41:05,243 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 41.0 (TID 34) (198.202.103.194, executor 8, partition 1, PROCESS_LOCAL, 4807 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,244 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 41.0 (TID 35) (198.202.103.194, executor 0, partition 0, PROCESS_LOCAL, 4807 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,254 INFO storage.BlockManagerInfo: Added broadcast_18_piece0 in memory on 198.202.103.194:46507 (size: 5.3 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,254 INFO storage.BlockManagerInfo: Added broadcast_18_piece0 in memory on 198.202.103.194:40573 (size: 5.3 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,259 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 13 to 198.202.103.194:54036
+2022-12-01 15:41:05,259 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 13 to 198.202.103.194:54022
+2022-12-01 15:41:05,288 INFO storage.BlockManagerInfo: Added rdd_83_0 in memory on 198.202.103.194:46507 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:05,290 INFO storage.BlockManagerInfo: Added rdd_83_1 in memory on 198.202.103.194:40573 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:05,292 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 41.0 (TID 35) in 49 ms on 198.202.103.194 (executor 0) (1/2)
+2022-12-01 15:41:05,295 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 41.0 (TID 34) in 51 ms on 198.202.103.194 (executor 8) (2/2)
+2022-12-01 15:41:05,295 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 41.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:05,295 INFO scheduler.DAGScheduler: ResultStage 41 (fold at VertexRDDImpl.scala:90) finished in 0.058 s
+2022-12-01 15:41:05,296 INFO scheduler.DAGScheduler: Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+2022-12-01 15:41:05,296 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 41: Stage finished
+2022-12-01 15:41:05,296 INFO scheduler.DAGScheduler: Job 3 finished: fold at VertexRDDImpl.scala:90, took 0.284230 s
+2022-12-01 15:41:05,297 INFO graphx.Pregel: Pregel finished iteration 2
+2022-12-01 15:41:05,297 INFO rdd.ZippedPartitionsRDD2: Removing RDD 66 from persistence list
+2022-12-01 15:41:05,299 INFO rdd.ZippedPartitionsRDD2: Removing RDD 52 from persistence list
+2022-12-01 15:41:05,299 INFO storage.BlockManager: Removing RDD 66
+2022-12-01 15:41:05,300 INFO storage.BlockManager: Removing RDD 52
+2022-12-01 15:41:05,300 INFO rdd.ZippedPartitionsRDD2: Removing RDD 58 from persistence list
+2022-12-01 15:41:05,301 INFO storage.BlockManager: Removing RDD 58
+2022-12-01 15:41:05,310 INFO rdd.ZippedPartitionsRDD2: Removing RDD 35 from persistence list
+2022-12-01 15:41:05,312 INFO storage.BlockManager: Removing RDD 35
+2022-12-01 15:41:05,312 INFO rdd.ZippedPartitionsRDD2: Removing RDD 41 from persistence list
+2022-12-01 15:41:05,313 INFO storage.BlockManager: Removing RDD 41
+2022-12-01 15:41:05,320 INFO rdd.ZippedPartitionsRDD2: Removing RDD 49 from persistence list
+2022-12-01 15:41:05,321 INFO storage.BlockManager: Removing RDD 49
+2022-12-01 15:41:05,328 INFO spark.SparkContext: Starting job: fold at VertexRDDImpl.scala:90
+2022-12-01 15:41:05,331 INFO scheduler.DAGScheduler: Registering RDD 94 (mapPartitions at VertexRDDImpl.scala:251) as input to shuffle 15
+2022-12-01 15:41:05,332 INFO scheduler.DAGScheduler: Registering RDD 90 (mapPartitions at VertexRDDImpl.scala:247) as input to shuffle 14
+2022-12-01 15:41:05,332 INFO scheduler.DAGScheduler: Registering RDD 98 (mapPartitions at GraphImpl.scala:208) as input to shuffle 16
+2022-12-01 15:41:05,332 INFO scheduler.DAGScheduler: Got job 4 (fold at VertexRDDImpl.scala:90) with 2 output partitions
+2022-12-01 15:41:05,332 INFO scheduler.DAGScheduler: Final stage: ResultStage 59 (fold at VertexRDDImpl.scala:90)
+2022-12-01 15:41:05,332 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 52, ShuffleMapStage 49, ShuffleMapStage 46, ShuffleMapStage 42, ShuffleMapStage 43, ShuffleMapStage 58, ShuffleMapStage 55)
+2022-12-01 15:41:05,333 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 58)
+2022-12-01 15:41:05,335 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 56 (ReplicatedVertexView.withActiveSet - shippedActives (broadcast) MapPartitionsRDD[94] at mapPartitions at VertexRDDImpl.scala:251), which has no missing parents
+2022-12-01 15:41:05,337 INFO memory.MemoryStore: Block broadcast_19 stored as values in memory (estimated size 11.4 KiB, free 433.9 MiB)
+2022-12-01 15:41:05,338 INFO memory.MemoryStore: Block broadcast_19_piece0 stored as bytes in memory (estimated size 5.2 KiB, free 433.9 MiB)
+2022-12-01 15:41:05,338 INFO storage.BlockManagerInfo: Added broadcast_19_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 5.2 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,339 INFO spark.SparkContext: Created broadcast 19 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:05,339 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 56 (ReplicatedVertexView.withActiveSet - shippedActives (broadcast) MapPartitionsRDD[94] at mapPartitions at VertexRDDImpl.scala:251) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:05,339 INFO scheduler.TaskSchedulerImpl: Adding task set 56.0 with 2 tasks resource profile 0
+2022-12-01 15:41:05,340 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 57 (ReplicatedVertexView.updateVertices - shippedVerts true true (broadcast) MapPartitionsRDD[90] at mapPartitions at VertexRDDImpl.scala:247), which has no missing parents
+2022-12-01 15:41:05,341 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 56.0 (TID 36) (198.202.103.194, executor 8, partition 1, PROCESS_LOCAL, 4796 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,341 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 56.0 (TID 37) (198.202.103.194, executor 0, partition 0, PROCESS_LOCAL, 4796 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,342 INFO memory.MemoryStore: Block broadcast_20 stored as values in memory (estimated size 12.1 KiB, free 433.9 MiB)
+2022-12-01 15:41:05,343 INFO memory.MemoryStore: Block broadcast_20_piece0 stored as bytes in memory (estimated size 5.4 KiB, free 433.9 MiB)
+2022-12-01 15:41:05,344 INFO storage.BlockManagerInfo: Added broadcast_20_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 5.4 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,344 INFO spark.SparkContext: Created broadcast 20 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:05,351 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 57 (ReplicatedVertexView.updateVertices - shippedVerts true true (broadcast) MapPartitionsRDD[90] at mapPartitions at VertexRDDImpl.scala:247) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:05,351 INFO scheduler.TaskSchedulerImpl: Adding task set 57.0 with 2 tasks resource profile 0
+2022-12-01 15:41:05,352 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 57.0 (TID 38) (198.202.103.194, executor 8, partition 1, PROCESS_LOCAL, 4860 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,353 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 57.0 (TID 39) (198.202.103.194, executor 0, partition 0, PROCESS_LOCAL, 4860 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,357 INFO storage.BlockManagerInfo: Added broadcast_19_piece0 in memory on 198.202.103.194:46507 (size: 5.2 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,357 INFO storage.BlockManagerInfo: Added broadcast_19_piece0 in memory on 198.202.103.194:40573 (size: 5.2 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,361 INFO storage.BlockManagerInfo: Added broadcast_20_piece0 in memory on 198.202.103.194:40573 (size: 5.4 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,361 INFO storage.BlockManagerInfo: Added broadcast_20_piece0 in memory on 198.202.103.194:46507 (size: 5.4 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,369 INFO storage.BlockManagerInfo: Added rdd_86_0 in memory on 198.202.103.194:46507 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:05,369 INFO storage.BlockManagerInfo: Added rdd_86_1 in memory on 198.202.103.194:40573 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:05,377 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 56.0 (TID 36) in 36 ms on 198.202.103.194 (executor 8) (1/2)
+2022-12-01 15:41:05,377 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 56.0 (TID 37) in 36 ms on 198.202.103.194 (executor 0) (2/2)
+2022-12-01 15:41:05,377 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 56.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:05,378 INFO scheduler.DAGScheduler: ShuffleMapStage 56 (mapPartitions at VertexRDDImpl.scala:251) finished in 0.042 s
+2022-12-01 15:41:05,378 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:05,378 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 57)
+2022-12-01 15:41:05,378 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 58, ResultStage 59)
+2022-12-01 15:41:05,378 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:05,384 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 57.0 (TID 39) in 32 ms on 198.202.103.194 (executor 0) (1/2)
+2022-12-01 15:41:05,385 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 57.0 (TID 38) in 33 ms on 198.202.103.194 (executor 8) (2/2)
+2022-12-01 15:41:05,385 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 57.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:05,386 INFO scheduler.DAGScheduler: ShuffleMapStage 57 (mapPartitions at VertexRDDImpl.scala:247) finished in 0.045 s
+2022-12-01 15:41:05,386 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:05,386 INFO scheduler.DAGScheduler: running: Set()
+2022-12-01 15:41:05,386 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 58, ResultStage 59)
+2022-12-01 15:41:05,386 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:05,387 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 58 (GraphImpl.aggregateMessages - preAgg MapPartitionsRDD[98] at mapPartitions at GraphImpl.scala:208), which has no missing parents
+2022-12-01 15:41:05,389 INFO memory.MemoryStore: Block broadcast_21 stored as values in memory (estimated size 13.0 KiB, free 433.9 MiB)
+2022-12-01 15:41:05,390 INFO memory.MemoryStore: Block broadcast_21_piece0 stored as bytes in memory (estimated size 6.1 KiB, free 433.9 MiB)
+2022-12-01 15:41:05,390 INFO storage.BlockManagerInfo: Added broadcast_21_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 6.1 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,390 INFO spark.SparkContext: Created broadcast 21 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:05,391 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 58 (GraphImpl.aggregateMessages - preAgg MapPartitionsRDD[98] at mapPartitions at GraphImpl.scala:208) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:05,391 INFO scheduler.TaskSchedulerImpl: Adding task set 58.0 with 2 tasks resource profile 0
+2022-12-01 15:41:05,392 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 58.0 (TID 40) (198.202.103.194, executor 7, partition 0, PROCESS_LOCAL, 5095 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,392 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 58.0 (TID 41) (198.202.103.194, executor 1, partition 1, PROCESS_LOCAL, 5095 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,403 INFO storage.BlockManagerInfo: Added broadcast_21_piece0 in memory on 198.202.103.194:38899 (size: 6.1 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,405 INFO storage.BlockManagerInfo: Added broadcast_21_piece0 in memory on 198.202.103.194:38485 (size: 6.1 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,409 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 14 to 198.202.103.194:54032
+2022-12-01 15:41:05,411 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 14 to 198.202.103.194:54028
+2022-12-01 15:41:05,421 INFO storage.BlockManagerInfo: Added rdd_92_1 in memory on 198.202.103.194:38899 (size: 13.4 MiB, free: 14.2 GiB)
+2022-12-01 15:41:05,422 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 15 to 198.202.103.194:54032
+2022-12-01 15:41:05,422 INFO storage.BlockManagerInfo: Added rdd_92_0 in memory on 198.202.103.194:38485 (size: 13.4 MiB, free: 14.2 GiB)
+2022-12-01 15:41:05,423 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 15 to 198.202.103.194:54028
+2022-12-01 15:41:05,516 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 58.0 (TID 40) in 124 ms on 198.202.103.194 (executor 7) (1/2)
+2022-12-01 15:41:05,523 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 58.0 (TID 41) in 131 ms on 198.202.103.194 (executor 1) (2/2)
+2022-12-01 15:41:05,523 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 58.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:05,524 INFO scheduler.DAGScheduler: ShuffleMapStage 58 (mapPartitions at GraphImpl.scala:208) finished in 0.136 s
+2022-12-01 15:41:05,524 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:05,524 INFO scheduler.DAGScheduler: running: Set()
+2022-12-01 15:41:05,524 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 59)
+2022-12-01 15:41:05,524 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:05,524 INFO scheduler.DAGScheduler: Submitting ResultStage 59 (MapPartitionsRDD[102] at map at VertexRDDImpl.scala:90), which has no missing parents
+2022-12-01 15:41:05,526 INFO memory.MemoryStore: Block broadcast_22 stored as values in memory (estimated size 12.6 KiB, free 433.9 MiB)
+2022-12-01 15:41:05,527 INFO memory.MemoryStore: Block broadcast_22_piece0 stored as bytes in memory (estimated size 5.5 KiB, free 433.9 MiB)
+2022-12-01 15:41:05,528 INFO storage.BlockManagerInfo: Added broadcast_22_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 5.5 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,528 INFO spark.SparkContext: Created broadcast 22 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:05,528 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ResultStage 59 (MapPartitionsRDD[102] at map at VertexRDDImpl.scala:90) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:05,528 INFO scheduler.TaskSchedulerImpl: Adding task set 59.0 with 2 tasks resource profile 0
+2022-12-01 15:41:05,530 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 59.0 (TID 42) (198.202.103.194, executor 8, partition 1, PROCESS_LOCAL, 4880 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,530 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 59.0 (TID 43) (198.202.103.194, executor 0, partition 0, PROCESS_LOCAL, 4880 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,539 INFO storage.BlockManagerInfo: Added broadcast_22_piece0 in memory on 198.202.103.194:46507 (size: 5.5 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,539 INFO storage.BlockManagerInfo: Added broadcast_22_piece0 in memory on 198.202.103.194:40573 (size: 5.5 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,543 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 16 to 198.202.103.194:54036
+2022-12-01 15:41:05,543 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 16 to 198.202.103.194:54022
+2022-12-01 15:41:05,570 INFO storage.BlockManagerInfo: Added rdd_100_0 in memory on 198.202.103.194:46507 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:05,573 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 59.0 (TID 43) in 43 ms on 198.202.103.194 (executor 0) (1/2)
+2022-12-01 15:41:05,574 INFO storage.BlockManagerInfo: Added rdd_100_1 in memory on 198.202.103.194:40573 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:05,577 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 59.0 (TID 42) in 48 ms on 198.202.103.194 (executor 8) (2/2)
+2022-12-01 15:41:05,577 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 59.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:05,578 INFO scheduler.DAGScheduler: ResultStage 59 (fold at VertexRDDImpl.scala:90) finished in 0.053 s
+2022-12-01 15:41:05,579 INFO scheduler.DAGScheduler: Job 4 is finished. Cancelling potential speculative or zombie tasks for this job
+2022-12-01 15:41:05,579 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 59: Stage finished
+2022-12-01 15:41:05,579 INFO scheduler.DAGScheduler: Job 4 finished: fold at VertexRDDImpl.scala:90, took 0.250790 s
+2022-12-01 15:41:05,580 INFO graphx.Pregel: Pregel finished iteration 3
+2022-12-01 15:41:05,580 INFO rdd.ZippedPartitionsRDD2: Removing RDD 83 from persistence list
+2022-12-01 15:41:05,582 INFO rdd.ZippedPartitionsRDD2: Removing RDD 69 from persistence list
+2022-12-01 15:41:05,582 INFO storage.BlockManager: Removing RDD 83
+2022-12-01 15:41:05,583 INFO rdd.ZippedPartitionsRDD2: Removing RDD 75 from persistence list
+2022-12-01 15:41:05,583 INFO storage.BlockManager: Removing RDD 69
+2022-12-01 15:41:05,584 INFO storage.BlockManager: Removing RDD 75
+2022-12-01 15:41:05,591 INFO rdd.ZippedPartitionsRDD2: Removing RDD 52 from persistence list
+2022-12-01 15:41:05,592 INFO rdd.ZippedPartitionsRDD2: Removing RDD 58 from persistence list
+2022-12-01 15:41:05,592 INFO storage.BlockManager: Removing RDD 52
+2022-12-01 15:41:05,592 INFO storage.BlockManager: Removing RDD 58
+2022-12-01 15:41:05,597 INFO rdd.ZippedPartitionsRDD2: Removing RDD 66 from persistence list
+2022-12-01 15:41:05,598 INFO storage.BlockManager: Removing RDD 66
+2022-12-01 15:41:05,602 INFO spark.SparkContext: Starting job: fold at VertexRDDImpl.scala:90
+2022-12-01 15:41:05,606 INFO scheduler.DAGScheduler: Registering RDD 111 (mapPartitions at VertexRDDImpl.scala:251) as input to shuffle 18
+2022-12-01 15:41:05,606 INFO scheduler.DAGScheduler: Registering RDD 107 (mapPartitions at VertexRDDImpl.scala:247) as input to shuffle 17
+2022-12-01 15:41:05,607 INFO scheduler.DAGScheduler: Registering RDD 115 (mapPartitions at GraphImpl.scala:208) as input to shuffle 19
+2022-12-01 15:41:05,607 INFO scheduler.DAGScheduler: Got job 5 (fold at VertexRDDImpl.scala:90) with 2 output partitions
+2022-12-01 15:41:05,607 INFO scheduler.DAGScheduler: Final stage: ResultStage 80 (fold at VertexRDDImpl.scala:90)
+2022-12-01 15:41:05,607 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 60, ShuffleMapStage 70, ShuffleMapStage 67, ShuffleMapStage 64, ShuffleMapStage 79, ShuffleMapStage 61, ShuffleMapStage 76, ShuffleMapStage 73)
+2022-12-01 15:41:05,608 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 79)
+2022-12-01 15:41:05,609 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 77 (ReplicatedVertexView.withActiveSet - shippedActives (broadcast) MapPartitionsRDD[111] at mapPartitions at VertexRDDImpl.scala:251), which has no missing parents
+2022-12-01 15:41:05,611 INFO memory.MemoryStore: Block broadcast_23 stored as values in memory (estimated size 12.0 KiB, free 433.8 MiB)
+2022-12-01 15:41:05,612 INFO memory.MemoryStore: Block broadcast_23_piece0 stored as bytes in memory (estimated size 5.3 KiB, free 433.8 MiB)
+2022-12-01 15:41:05,612 INFO storage.BlockManagerInfo: Added broadcast_23_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 5.3 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,613 INFO spark.SparkContext: Created broadcast 23 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:05,613 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 77 (ReplicatedVertexView.withActiveSet - shippedActives (broadcast) MapPartitionsRDD[111] at mapPartitions at VertexRDDImpl.scala:251) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:05,613 INFO scheduler.TaskSchedulerImpl: Adding task set 77.0 with 2 tasks resource profile 0
+2022-12-01 15:41:05,614 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 78 (ReplicatedVertexView.updateVertices - shippedVerts true true (broadcast) MapPartitionsRDD[107] at mapPartitions at VertexRDDImpl.scala:247), which has no missing parents
+2022-12-01 15:41:05,614 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 77.0 (TID 44) (198.202.103.194, executor 0, partition 0, PROCESS_LOCAL, 4869 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,615 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 77.0 (TID 45) (198.202.103.194, executor 8, partition 1, PROCESS_LOCAL, 4869 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,615 INFO memory.MemoryStore: Block broadcast_24 stored as values in memory (estimated size 12.8 KiB, free 433.8 MiB)
+2022-12-01 15:41:05,617 INFO memory.MemoryStore: Block broadcast_24_piece0 stored as bytes in memory (estimated size 5.5 KiB, free 433.8 MiB)
+2022-12-01 15:41:05,617 INFO storage.BlockManagerInfo: Added broadcast_24_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 5.5 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,617 INFO spark.SparkContext: Created broadcast 24 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:05,617 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 78 (ReplicatedVertexView.updateVertices - shippedVerts true true (broadcast) MapPartitionsRDD[107] at mapPartitions at VertexRDDImpl.scala:247) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:05,617 INFO scheduler.TaskSchedulerImpl: Adding task set 78.0 with 2 tasks resource profile 0
+2022-12-01 15:41:05,618 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 78.0 (TID 46) (198.202.103.194, executor 0, partition 0, PROCESS_LOCAL, 4933 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,619 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 78.0 (TID 47) (198.202.103.194, executor 8, partition 1, PROCESS_LOCAL, 4933 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,624 INFO storage.BlockManagerInfo: Added broadcast_23_piece0 in memory on 198.202.103.194:46507 (size: 5.3 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,624 INFO storage.BlockManagerInfo: Added broadcast_23_piece0 in memory on 198.202.103.194:40573 (size: 5.3 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,628 INFO storage.BlockManagerInfo: Added broadcast_24_piece0 in memory on 198.202.103.194:40573 (size: 5.5 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,628 INFO storage.BlockManagerInfo: Added broadcast_24_piece0 in memory on 198.202.103.194:46507 (size: 5.5 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,636 INFO storage.BlockManagerInfo: Added rdd_103_1 in memory on 198.202.103.194:40573 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:05,636 INFO storage.BlockManagerInfo: Added rdd_103_0 in memory on 198.202.103.194:46507 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:05,644 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 77.0 (TID 44) in 30 ms on 198.202.103.194 (executor 0) (1/2)
+2022-12-01 15:41:05,645 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 77.0 (TID 45) in 31 ms on 198.202.103.194 (executor 8) (2/2)
+2022-12-01 15:41:05,645 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 77.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:05,645 INFO scheduler.DAGScheduler: ShuffleMapStage 77 (mapPartitions at VertexRDDImpl.scala:251) finished in 0.035 s
+2022-12-01 15:41:05,645 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:05,645 INFO scheduler.DAGScheduler: running: Set(ShuffleMapStage 78)
+2022-12-01 15:41:05,645 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 79, ResultStage 80)
+2022-12-01 15:41:05,645 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:05,650 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 78.0 (TID 46) in 32 ms on 198.202.103.194 (executor 0) (1/2)
+2022-12-01 15:41:05,651 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 78.0 (TID 47) in 32 ms on 198.202.103.194 (executor 8) (2/2)
+2022-12-01 15:41:05,651 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 78.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:05,652 INFO scheduler.DAGScheduler: ShuffleMapStage 78 (mapPartitions at VertexRDDImpl.scala:247) finished in 0.037 s
+2022-12-01 15:41:05,652 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:05,652 INFO scheduler.DAGScheduler: running: Set()
+2022-12-01 15:41:05,652 INFO scheduler.DAGScheduler: waiting: Set(ShuffleMapStage 79, ResultStage 80)
+2022-12-01 15:41:05,652 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:05,652 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 79 (GraphImpl.aggregateMessages - preAgg MapPartitionsRDD[115] at mapPartitions at GraphImpl.scala:208), which has no missing parents
+2022-12-01 15:41:05,654 INFO memory.MemoryStore: Block broadcast_25 stored as values in memory (estimated size 13.2 KiB, free 433.8 MiB)
+2022-12-01 15:41:05,655 INFO memory.MemoryStore: Block broadcast_25_piece0 stored as bytes in memory (estimated size 6.1 KiB, free 433.8 MiB)
+2022-12-01 15:41:05,655 INFO storage.BlockManagerInfo: Added broadcast_25_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 6.1 KiB, free: 434.2 MiB)
+2022-12-01 15:41:05,656 INFO spark.SparkContext: Created broadcast 25 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:05,656 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 79 (GraphImpl.aggregateMessages - preAgg MapPartitionsRDD[115] at mapPartitions at GraphImpl.scala:208) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:05,656 INFO scheduler.TaskSchedulerImpl: Adding task set 79.0 with 2 tasks resource profile 0
+2022-12-01 15:41:05,657 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 79.0 (TID 48) (198.202.103.194, executor 7, partition 0, PROCESS_LOCAL, 5136 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,658 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 79.0 (TID 49) (198.202.103.194, executor 1, partition 1, PROCESS_LOCAL, 5136 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,669 INFO storage.BlockManagerInfo: Added broadcast_25_piece0 in memory on 198.202.103.194:38899 (size: 6.1 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,669 INFO storage.BlockManagerInfo: Added broadcast_25_piece0 in memory on 198.202.103.194:38485 (size: 6.1 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,675 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 17 to 198.202.103.194:54032
+2022-12-01 15:41:05,675 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 17 to 198.202.103.194:54028
+2022-12-01 15:41:05,685 INFO storage.BlockManagerInfo: Added rdd_109_0 in memory on 198.202.103.194:38485 (size: 13.4 MiB, free: 14.2 GiB)
+2022-12-01 15:41:05,686 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 18 to 198.202.103.194:54028
+2022-12-01 15:41:05,687 INFO storage.BlockManagerInfo: Added rdd_109_1 in memory on 198.202.103.194:38899 (size: 13.4 MiB, free: 14.2 GiB)
+2022-12-01 15:41:05,688 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 18 to 198.202.103.194:54032
+2022-12-01 15:41:05,784 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 79.0 (TID 48) in 127 ms on 198.202.103.194 (executor 7) (1/2)
+2022-12-01 15:41:05,792 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 79.0 (TID 49) in 135 ms on 198.202.103.194 (executor 1) (2/2)
+2022-12-01 15:41:05,792 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 79.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:05,793 INFO scheduler.DAGScheduler: ShuffleMapStage 79 (mapPartitions at GraphImpl.scala:208) finished in 0.140 s
+2022-12-01 15:41:05,793 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:05,793 INFO scheduler.DAGScheduler: running: Set()
+2022-12-01 15:41:05,793 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 80)
+2022-12-01 15:41:05,793 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:05,794 INFO scheduler.DAGScheduler: Submitting ResultStage 80 (MapPartitionsRDD[119] at map at VertexRDDImpl.scala:90), which has no missing parents
+2022-12-01 15:41:05,842 INFO memory.MemoryStore: Block broadcast_26 stored as values in memory (estimated size 13.2 KiB, free 433.8 MiB)
+2022-12-01 15:41:05,843 INFO memory.MemoryStore: Block broadcast_26_piece0 stored as bytes in memory (estimated size 5.6 KiB, free 433.8 MiB)
+2022-12-01 15:41:05,844 INFO storage.BlockManagerInfo: Added broadcast_26_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 5.6 KiB, free: 434.2 MiB)
+2022-12-01 15:41:05,844 INFO spark.SparkContext: Created broadcast 26 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:05,845 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ResultStage 80 (MapPartitionsRDD[119] at map at VertexRDDImpl.scala:90) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:05,845 INFO scheduler.TaskSchedulerImpl: Adding task set 80.0 with 2 tasks resource profile 0
+2022-12-01 15:41:05,846 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 80.0 (TID 50) (198.202.103.194, executor 8, partition 1, PROCESS_LOCAL, 4953 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,846 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 80.0 (TID 51) (198.202.103.194, executor 0, partition 0, PROCESS_LOCAL, 4953 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:05,859 INFO storage.BlockManagerInfo: Removed broadcast_23_piece0 on 198.202.103.194:46507 in memory (size: 5.3 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,860 INFO storage.BlockManagerInfo: Removed broadcast_23_piece0 on 198.202.103.194:40573 in memory (size: 5.3 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,860 INFO storage.BlockManagerInfo: Added broadcast_26_piece0 in memory on 198.202.103.194:46507 (size: 5.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,860 INFO storage.BlockManagerInfo: Added broadcast_26_piece0 in memory on 198.202.103.194:40573 (size: 5.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,860 INFO storage.BlockManagerInfo: Removed broadcast_23_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 5.3 KiB, free: 434.2 MiB)
+2022-12-01 15:41:05,864 INFO storage.BlockManagerInfo: Removed broadcast_13_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 5.9 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,866 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 19 to 198.202.103.194:54022
+2022-12-01 15:41:05,866 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 19 to 198.202.103.194:54036
+2022-12-01 15:41:05,867 INFO storage.BlockManagerInfo: Removed broadcast_13_piece0 on 198.202.103.194:38899 in memory (size: 5.9 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,868 INFO storage.BlockManagerInfo: Removed broadcast_13_piece0 on 198.202.103.194:38485 in memory (size: 5.9 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,874 INFO storage.BlockManagerInfo: Removed broadcast_20_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 5.4 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,876 INFO storage.BlockManagerInfo: Removed broadcast_20_piece0 on 198.202.103.194:46507 in memory (size: 5.4 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,876 INFO storage.BlockManagerInfo: Removed broadcast_20_piece0 on 198.202.103.194:40573 in memory (size: 5.4 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,880 INFO storage.BlockManagerInfo: Removed broadcast_24_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 5.5 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,882 INFO storage.BlockManagerInfo: Removed broadcast_24_piece0 on 198.202.103.194:40573 in memory (size: 5.5 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,883 INFO storage.BlockManagerInfo: Removed broadcast_24_piece0 on 198.202.103.194:46507 in memory (size: 5.5 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,887 INFO storage.BlockManagerInfo: Removed broadcast_3_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 4.4 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,888 INFO storage.BlockManagerInfo: Removed broadcast_3_piece0 on 198.202.103.194:46507 in memory (size: 4.4 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,888 INFO storage.BlockManagerInfo: Removed broadcast_3_piece0 on 198.202.103.194:40573 in memory (size: 4.4 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,894 INFO storage.BlockManagerInfo: Removed broadcast_14_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 5.3 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,895 INFO storage.BlockManagerInfo: Removed broadcast_14_piece0 on 198.202.103.194:46507 in memory (size: 5.3 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,896 INFO storage.BlockManagerInfo: Added rdd_117_0 in memory on 198.202.103.194:46507 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:05,896 INFO storage.BlockManagerInfo: Removed broadcast_14_piece0 on 198.202.103.194:40573 in memory (size: 5.3 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,898 INFO storage.BlockManagerInfo: Added rdd_117_1 in memory on 198.202.103.194:40573 (size: 2.8 MiB, free: 14.2 GiB)
+2022-12-01 15:41:05,899 INFO storage.BlockManagerInfo: Removed broadcast_21_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 6.1 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,900 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 80.0 (TID 51) in 54 ms on 198.202.103.194 (executor 0) (1/2)
+2022-12-01 15:41:05,901 INFO storage.BlockManagerInfo: Removed broadcast_21_piece0 on 198.202.103.194:38899 in memory (size: 6.1 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,902 INFO storage.BlockManagerInfo: Removed broadcast_21_piece0 on 198.202.103.194:38485 in memory (size: 6.1 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,902 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 80.0 (TID 50) in 56 ms on 198.202.103.194 (executor 8) (2/2)
+2022-12-01 15:41:05,902 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 80.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:05,903 INFO scheduler.DAGScheduler: ResultStage 80 (fold at VertexRDDImpl.scala:90) finished in 0.090 s
+2022-12-01 15:41:05,903 INFO scheduler.DAGScheduler: Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+2022-12-01 15:41:05,903 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 80: Stage finished
+2022-12-01 15:41:05,903 INFO scheduler.DAGScheduler: Job 5 finished: fold at VertexRDDImpl.scala:90, took 0.301094 s
+2022-12-01 15:41:05,904 INFO graphx.Pregel: Pregel finished iteration 4
+2022-12-01 15:41:05,904 INFO rdd.ZippedPartitionsRDD2: Removing RDD 100 from persistence list
+2022-12-01 15:41:05,906 INFO rdd.ZippedPartitionsRDD2: Removing RDD 86 from persistence list
+2022-12-01 15:41:05,906 INFO storage.BlockManager: Removing RDD 100
+2022-12-01 15:41:05,907 INFO storage.BlockManagerInfo: Removed broadcast_11_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 4.9 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,907 INFO storage.BlockManagerInfo: Removed broadcast_11_piece0 on 198.202.103.194:46507 in memory (size: 4.9 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,907 INFO storage.BlockManagerInfo: Removed broadcast_11_piece0 on 198.202.103.194:40573 in memory (size: 4.9 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,908 INFO rdd.ZippedPartitionsRDD2: Removing RDD 92 from persistence list
+2022-12-01 15:41:05,908 INFO storage.BlockManager: Removing RDD 86
+2022-12-01 15:41:05,908 INFO storage.BlockManager: Removing RDD 92
+2022-12-01 15:41:05,908 INFO rdd.ZippedPartitionsRDD2: Removing RDD 83 from persistence list
+2022-12-01 15:41:05,909 INFO rdd.ZippedPartitionsRDD2: Removing RDD 100 from persistence list
+2022-12-01 15:41:05,909 INFO storage.BlockManager: Removing RDD 83
+2022-12-01 15:41:05,911 INFO rdd.ZippedPartitionsRDD2: Removing RDD 117 from persistence list
+2022-12-01 15:41:05,911 INFO storage.BlockManager: Removing RDD 100
+2022-12-01 15:41:05,911 INFO storage.BlockManagerInfo: Removed broadcast_1_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 4.2 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,912 INFO storage.BlockManager: Removing RDD 117
+2022-12-01 15:41:05,917 INFO storage.BlockManagerInfo: Removed broadcast_1_piece0 on 198.202.103.194:34899 in memory (size: 4.2 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,920 INFO storage.BlockManagerInfo: Removed broadcast_15_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 5.3 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,921 INFO storage.BlockManagerInfo: Removed broadcast_15_piece0 on 198.202.103.194:46507 in memory (size: 5.3 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,922 INFO storage.BlockManagerInfo: Removed broadcast_15_piece0 on 198.202.103.194:40573 in memory (size: 5.3 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,924 INFO storage.BlockManagerInfo: Removed broadcast_22_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 5.5 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,924 INFO storage.BlockManagerInfo: Removed broadcast_22_piece0 on 198.202.103.194:46507 in memory (size: 5.5 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,925 INFO storage.BlockManagerInfo: Removed broadcast_22_piece0 on 198.202.103.194:40573 in memory (size: 5.5 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,927 INFO storage.BlockManagerInfo: Removed broadcast_17_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 6.0 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,928 INFO storage.BlockManagerInfo: Removed broadcast_17_piece0 on 198.202.103.194:38899 in memory (size: 6.0 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,928 INFO storage.BlockManagerInfo: Removed broadcast_17_piece0 on 198.202.103.194:38485 in memory (size: 6.0 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,931 INFO storage.BlockManagerInfo: Removed broadcast_16_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 5.1 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,931 INFO storage.BlockManagerInfo: Removed broadcast_16_piece0 on 198.202.103.194:46507 in memory (size: 5.1 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,931 INFO storage.BlockManagerInfo: Removed broadcast_16_piece0 on 198.202.103.194:40573 in memory (size: 5.1 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,934 INFO storage.BlockManagerInfo: Removed broadcast_12_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 5.2 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,934 INFO storage.BlockManagerInfo: Removed broadcast_12_piece0 on 198.202.103.194:46507 in memory (size: 5.2 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,935 INFO storage.BlockManagerInfo: Removed broadcast_12_piece0 on 198.202.103.194:40573 in memory (size: 5.2 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,937 INFO storage.BlockManagerInfo: Removed broadcast_18_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 5.3 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,938 INFO storage.BlockManagerInfo: Removed broadcast_18_piece0 on 198.202.103.194:46507 in memory (size: 5.3 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,938 INFO storage.BlockManagerInfo: Removed broadcast_18_piece0 on 198.202.103.194:40573 in memory (size: 5.3 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,940 INFO storage.BlockManagerInfo: Removed broadcast_7_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 4.6 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,940 INFO storage.BlockManagerInfo: Removed broadcast_7_piece0 on 198.202.103.194:46507 in memory (size: 4.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,941 INFO storage.BlockManagerInfo: Removed broadcast_7_piece0 on 198.202.103.194:40573 in memory (size: 4.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,943 INFO storage.BlockManagerInfo: Removed broadcast_10_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 5.1 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,943 INFO storage.BlockManagerInfo: Removed broadcast_10_piece0 on 198.202.103.194:46507 in memory (size: 5.1 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,943 INFO storage.BlockManagerInfo: Removed broadcast_10_piece0 on 198.202.103.194:40573 in memory (size: 5.1 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,945 INFO storage.BlockManagerInfo: Removed broadcast_2_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 3.7 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,946 INFO storage.BlockManagerInfo: Removed broadcast_2_piece0 on 198.202.103.194:34899 in memory (size: 3.7 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,948 INFO storage.BlockManagerInfo: Removed broadcast_5_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 5.6 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,949 INFO storage.BlockManagerInfo: Removed broadcast_5_piece0 on 198.202.103.194:38899 in memory (size: 5.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,950 INFO storage.BlockManagerInfo: Removed broadcast_5_piece0 on 198.202.103.194:38485 in memory (size: 5.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,956 INFO storage.BlockManagerInfo: Removed broadcast_19_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 5.2 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,956 INFO storage.BlockManagerInfo: Removed broadcast_19_piece0 on 198.202.103.194:46507 in memory (size: 5.2 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,956 INFO storage.BlockManagerInfo: Removed broadcast_19_piece0 on 198.202.103.194:40573 in memory (size: 5.2 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,957 INFO storage.BlockManagerInfo: Removed broadcast_8_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 4.9 KiB, free: 434.3 MiB)
+2022-12-01 15:41:05,958 INFO storage.BlockManagerInfo: Removed broadcast_8_piece0 on 198.202.103.194:40573 in memory (size: 4.9 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,958 INFO storage.BlockManagerInfo: Removed broadcast_8_piece0 on 198.202.103.194:46507 in memory (size: 4.9 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,960 INFO storage.BlockManagerInfo: Removed broadcast_4_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 4.6 KiB, free: 434.4 MiB)
+2022-12-01 15:41:05,964 INFO storage.BlockManagerInfo: Removed broadcast_4_piece0 on 198.202.103.194:40931 in memory (size: 4.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,966 INFO storage.BlockManagerInfo: Removed broadcast_4_piece0 on 198.202.103.194:41611 in memory (size: 4.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,968 INFO storage.BlockManagerInfo: Removed broadcast_6_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 4.8 KiB, free: 434.4 MiB)
+2022-12-01 15:41:05,969 INFO storage.BlockManagerInfo: Removed broadcast_6_piece0 on 198.202.103.194:46507 in memory (size: 4.8 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,970 INFO storage.BlockManagerInfo: Removed broadcast_6_piece0 on 198.202.103.194:40573 in memory (size: 4.8 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,971 INFO storage.BlockManagerInfo: Removed broadcast_9_piece0 on exp-2-01.expanse.sdsc.edu:34489 in memory (size: 5.8 KiB, free: 434.4 MiB)
+2022-12-01 15:41:05,972 INFO storage.BlockManagerInfo: Removed broadcast_9_piece0 on 198.202.103.194:38899 in memory (size: 5.8 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,973 INFO storage.BlockManagerInfo: Removed broadcast_9_piece0 on 198.202.103.194:38485 in memory (size: 5.8 KiB, free: 14.2 GiB)
+2022-12-01 15:41:05,978 INFO spark.SparkContext: Starting job: sortBy at ConnectedComponents.scala:53
+2022-12-01 15:41:06,158 INFO scheduler.DAGScheduler: Registering RDD 120 (map at ConnectedComponents.scala:53) as input to shuffle 20
+2022-12-01 15:41:06,159 INFO scheduler.DAGScheduler: Got job 6 (sortBy at ConnectedComponents.scala:53) with 2 output partitions
+2022-12-01 15:41:06,159 INFO scheduler.DAGScheduler: Final stage: ResultStage 99 (sortBy at ConnectedComponents.scala:53)
+2022-12-01 15:41:06,159 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 98)
+2022-12-01 15:41:06,159 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 98)
+2022-12-01 15:41:06,161 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 98 (MapPartitionsRDD[120] at map at ConnectedComponents.scala:53), which has no missing parents
+2022-12-01 15:41:06,163 INFO memory.MemoryStore: Block broadcast_27 stored as values in memory (estimated size 12.8 KiB, free 434.2 MiB)
+2022-12-01 15:41:06,164 INFO memory.MemoryStore: Block broadcast_27_piece0 stored as bytes in memory (estimated size 5.6 KiB, free 434.1 MiB)
+2022-12-01 15:41:06,164 INFO storage.BlockManagerInfo: Added broadcast_27_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 5.6 KiB, free: 434.4 MiB)
+2022-12-01 15:41:06,164 INFO spark.SparkContext: Created broadcast 27 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:06,165 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 98 (MapPartitionsRDD[120] at map at ConnectedComponents.scala:53) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:06,165 INFO scheduler.TaskSchedulerImpl: Adding task set 98.0 with 2 tasks resource profile 0
+2022-12-01 15:41:06,166 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 98.0 (TID 52) (198.202.103.194, executor 8, partition 1, PROCESS_LOCAL, 4901 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:06,166 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 98.0 (TID 53) (198.202.103.194, executor 0, partition 0, PROCESS_LOCAL, 4901 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:06,176 INFO storage.BlockManagerInfo: Added broadcast_27_piece0 in memory on 198.202.103.194:46507 (size: 5.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:06,192 INFO storage.BlockManagerInfo: Added broadcast_27_piece0 in memory on 198.202.103.194:40573 (size: 5.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:06,253 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 98.0 (TID 53) in 87 ms on 198.202.103.194 (executor 0) (1/2)
+2022-12-01 15:41:06,304 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 98.0 (TID 52) in 138 ms on 198.202.103.194 (executor 8) (2/2)
+2022-12-01 15:41:06,304 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 98.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:06,304 INFO scheduler.DAGScheduler: ShuffleMapStage 98 (map at ConnectedComponents.scala:53) finished in 0.143 s
+2022-12-01 15:41:06,304 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:06,304 INFO scheduler.DAGScheduler: running: Set()
+2022-12-01 15:41:06,304 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 99)
+2022-12-01 15:41:06,304 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:06,304 INFO scheduler.DAGScheduler: Submitting ResultStage 99 (MapPartitionsRDD[124] at sortBy at ConnectedComponents.scala:53), which has no missing parents
+2022-12-01 15:41:06,306 INFO memory.MemoryStore: Block broadcast_28 stored as values in memory (estimated size 6.5 KiB, free 434.1 MiB)
+2022-12-01 15:41:06,307 INFO memory.MemoryStore: Block broadcast_28_piece0 stored as bytes in memory (estimated size 3.4 KiB, free 434.1 MiB)
+2022-12-01 15:41:06,307 INFO storage.BlockManagerInfo: Added broadcast_28_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 3.4 KiB, free: 434.4 MiB)
+2022-12-01 15:41:06,307 INFO spark.SparkContext: Created broadcast 28 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:06,308 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ResultStage 99 (MapPartitionsRDD[124] at sortBy at ConnectedComponents.scala:53) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:06,308 INFO scheduler.TaskSchedulerImpl: Adding task set 99.0 with 2 tasks resource profile 0
+2022-12-01 15:41:06,309 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 99.0 (TID 54) (198.202.103.194, executor 2, partition 0, NODE_LOCAL, 4275 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:06,309 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 99.0 (TID 55) (198.202.103.194, executor 6, partition 1, NODE_LOCAL, 4275 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:06,448 INFO storage.BlockManagerInfo: Added broadcast_28_piece0 in memory on 198.202.103.194:46137 (size: 3.4 KiB, free: 14.2 GiB)
+2022-12-01 15:41:06,458 INFO storage.BlockManagerInfo: Added broadcast_28_piece0 in memory on 198.202.103.194:35287 (size: 3.4 KiB, free: 14.2 GiB)
+2022-12-01 15:41:06,662 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 20 to 198.202.103.194:54026
+2022-12-01 15:41:06,681 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 20 to 198.202.103.194:54030
+2022-12-01 15:41:06,970 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 99.0 (TID 54) in 661 ms on 198.202.103.194 (executor 2) (1/2)
+2022-12-01 15:41:06,992 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 99.0 (TID 55) in 683 ms on 198.202.103.194 (executor 6) (2/2)
+2022-12-01 15:41:06,992 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 99.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:06,992 INFO scheduler.DAGScheduler: ResultStage 99 (sortBy at ConnectedComponents.scala:53) finished in 0.687 s
+2022-12-01 15:41:06,993 INFO scheduler.DAGScheduler: Job 6 is finished. Cancelling potential speculative or zombie tasks for this job
+2022-12-01 15:41:06,993 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 99: Stage finished
+2022-12-01 15:41:06,993 INFO scheduler.DAGScheduler: Job 6 finished: sortBy at ConnectedComponents.scala:53, took 1.015015 s
+2022-12-01 15:41:07,009 INFO spark.SparkContext: Starting job: collect at ConnectedComponents.scala:53
+2022-12-01 15:41:07,013 INFO scheduler.DAGScheduler: Registering RDD 122 (sortBy at ConnectedComponents.scala:53) as input to shuffle 21
+2022-12-01 15:41:07,013 INFO scheduler.DAGScheduler: Got job 7 (collect at ConnectedComponents.scala:53) with 2 output partitions
+2022-12-01 15:41:07,013 INFO scheduler.DAGScheduler: Final stage: ResultStage 119 (collect at ConnectedComponents.scala:53)
+2022-12-01 15:41:07,013 INFO scheduler.DAGScheduler: Parents of final stage: List(ShuffleMapStage 118)
+2022-12-01 15:41:07,013 INFO scheduler.DAGScheduler: Missing parents: List(ShuffleMapStage 118)
+2022-12-01 15:41:07,014 INFO scheduler.DAGScheduler: Submitting ShuffleMapStage 118 (MapPartitionsRDD[122] at sortBy at ConnectedComponents.scala:53), which has no missing parents
+2022-12-01 15:41:07,015 INFO memory.MemoryStore: Block broadcast_29 stored as values in memory (estimated size 6.3 KiB, free 434.1 MiB)
+2022-12-01 15:41:07,016 INFO memory.MemoryStore: Block broadcast_29_piece0 stored as bytes in memory (estimated size 3.6 KiB, free 434.1 MiB)
+2022-12-01 15:41:07,016 INFO storage.BlockManagerInfo: Added broadcast_29_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 3.6 KiB, free: 434.3 MiB)
+2022-12-01 15:41:07,017 INFO spark.SparkContext: Created broadcast 29 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:07,017 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 118 (MapPartitionsRDD[122] at sortBy at ConnectedComponents.scala:53) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:07,017 INFO scheduler.TaskSchedulerImpl: Adding task set 118.0 with 2 tasks resource profile 0
+2022-12-01 15:41:07,018 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 118.0 (TID 56) (198.202.103.194, executor 6, partition 0, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:07,018 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 118.0 (TID 57) (198.202.103.194, executor 0, partition 1, NODE_LOCAL, 4264 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:07,027 INFO storage.BlockManagerInfo: Added broadcast_29_piece0 in memory on 198.202.103.194:46507 (size: 3.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:07,030 INFO storage.BlockManagerInfo: Added broadcast_29_piece0 in memory on 198.202.103.194:35287 (size: 3.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:07,035 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 20 to 198.202.103.194:54036
+2022-12-01 15:41:07,054 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 118.0 (TID 57) in 36 ms on 198.202.103.194 (executor 0) (1/2)
+2022-12-01 15:41:07,075 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 118.0 (TID 56) in 57 ms on 198.202.103.194 (executor 6) (2/2)
+2022-12-01 15:41:07,075 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 118.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:07,076 INFO scheduler.DAGScheduler: ShuffleMapStage 118 (sortBy at ConnectedComponents.scala:53) finished in 0.061 s
+2022-12-01 15:41:07,076 INFO scheduler.DAGScheduler: looking for newly runnable stages
+2022-12-01 15:41:07,076 INFO scheduler.DAGScheduler: running: Set()
+2022-12-01 15:41:07,076 INFO scheduler.DAGScheduler: waiting: Set(ResultStage 119)
+2022-12-01 15:41:07,076 INFO scheduler.DAGScheduler: failed: Set()
+2022-12-01 15:41:07,076 INFO scheduler.DAGScheduler: Submitting ResultStage 119 (MapPartitionsRDD[126] at sortBy at ConnectedComponents.scala:53), which has no missing parents
+2022-12-01 15:41:07,077 INFO memory.MemoryStore: Block broadcast_30 stored as values in memory (estimated size 4.6 KiB, free 434.1 MiB)
+2022-12-01 15:41:07,078 INFO memory.MemoryStore: Block broadcast_30_piece0 stored as bytes in memory (estimated size 2.6 KiB, free 434.1 MiB)
+2022-12-01 15:41:07,078 INFO storage.BlockManagerInfo: Added broadcast_30_piece0 in memory on exp-2-01.expanse.sdsc.edu:34489 (size: 2.6 KiB, free: 434.3 MiB)
+2022-12-01 15:41:07,079 INFO spark.SparkContext: Created broadcast 30 from broadcast at DAGScheduler.scala:1388
+2022-12-01 15:41:07,079 INFO scheduler.DAGScheduler: Submitting 2 missing tasks from ResultStage 119 (MapPartitionsRDD[126] at sortBy at ConnectedComponents.scala:53) (first 15 tasks are for partitions Vector(0, 1))
+2022-12-01 15:41:07,079 INFO scheduler.TaskSchedulerImpl: Adding task set 119.0 with 2 tasks resource profile 0
+2022-12-01 15:41:07,080 INFO scheduler.TaskSetManager: Starting task 0.0 in stage 119.0 (TID 58) (198.202.103.194, executor 9, partition 0, NODE_LOCAL, 4275 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:07,080 INFO scheduler.TaskSetManager: Starting task 1.0 in stage 119.0 (TID 59) (198.202.103.194, executor 6, partition 1, NODE_LOCAL, 4275 bytes) taskResourceAssignments Map()
+2022-12-01 15:41:07,092 INFO storage.BlockManagerInfo: Added broadcast_30_piece0 in memory on 198.202.103.194:35287 (size: 2.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:07,097 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 21 to 198.202.103.194:54030
+2022-12-01 15:41:07,113 INFO storage.BlockManagerInfo: Added broadcast_30_piece0 in memory on 198.202.103.194:41611 (size: 2.6 KiB, free: 14.2 GiB)
+2022-12-01 15:41:07,119 INFO scheduler.TaskSetManager: Finished task 1.0 in stage 119.0 (TID 59) in 39 ms on 198.202.103.194 (executor 6) (1/2)
+2022-12-01 15:41:07,160 INFO spark.MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 21 to 198.202.103.194:54040
+2022-12-01 15:41:07,188 INFO scheduler.TaskSetManager: Finished task 0.0 in stage 119.0 (TID 58) in 109 ms on 198.202.103.194 (executor 9) (2/2)
+2022-12-01 15:41:07,188 INFO scheduler.TaskSchedulerImpl: Removed TaskSet 119.0, whose tasks have all completed, from pool 
+2022-12-01 15:41:07,188 INFO scheduler.DAGScheduler: ResultStage 119 (collect at ConnectedComponents.scala:53) finished in 0.111 s
+2022-12-01 15:41:07,189 INFO scheduler.DAGScheduler: Job 7 is finished. Cancelling potential speculative or zombie tasks for this job
+2022-12-01 15:41:07,189 INFO scheduler.TaskSchedulerImpl: Killing all running tasks in stage 119: Stage finished
+2022-12-01 15:41:07,189 INFO scheduler.DAGScheduler: Job 7 finished: collect at ConnectedComponents.scala:53, took 0.180017 s
+(0,92983)
+(1,5847)
+(2,752)
+(3,331)
+(4,46)
+(5,22)
+(6,12)
+(7,2)
+(8,1)
+(9,2)
+(10,1)
+(11,1)
+2022-12-01 15:41:07,199 INFO server.AbstractConnector: Stopped Spark@4bbc8023{HTTP/1.1, (http/1.1)}{exp-2-01:4040}
+2022-12-01 15:41:07,200 INFO ui.SparkUI: Stopped Spark web UI at http://exp-2-01.expanse.sdsc.edu:4040
+2022-12-01 15:41:07,205 INFO cluster.StandaloneSchedulerBackend: Shutting down all executors
+2022-12-01 15:41:07,206 INFO cluster.CoarseGrainedSchedulerBackend$DriverEndpoint: Asking each executor to shut down
+2022-12-01 15:41:07,223 INFO spark.MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+2022-12-01 15:41:07,248 INFO memory.MemoryStore: MemoryStore cleared
+2022-12-01 15:41:07,248 INFO storage.BlockManager: BlockManager stopped
+2022-12-01 15:41:07,252 INFO storage.BlockManagerMaster: BlockManagerMaster stopped
+2022-12-01 15:41:07,262 INFO scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+2022-12-01 15:41:07,291 INFO spark.SparkContext: Successfully stopped SparkContext
+2022-12-01 15:41:07,294 INFO util.ShutdownHookManager: Shutdown hook called
+2022-12-01 15:41:07,294 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-1c226496-afd3-45e9-80a3-813ccc6e1081
+2022-12-01 15:41:07,301 INFO util.ShutdownHookManager: Deleting directory /tmp/spark-f167b498-a7b5-43fa-897c-a1bb81acb6f7
+Stopping namenodes on [exp-2-01]
+Stopping datanodes
+WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+localhost: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+localhost: IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+localhost: Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+localhost: It is also possible that a host key has just been changed.
+localhost: The fingerprint for the ED25519 key sent by the remote host is
+localhost: SHA256:NfhwPGjaKzhVjZkkhI/gd0LXfbPM6XqLaQqO8V+RciE.
+localhost: Please contact your system administrator.
+localhost: Add correct host key in /home/ajaved/.ssh/known_hosts to get rid of this message.
+localhost: Offending ED25519 key in /home/ajaved/.ssh/known_hosts:1
+localhost: Password authentication is disabled to avoid man-in-the-middle attacks.
+localhost: Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+localhost: WARNING: HADOOP_SECURE_DN_PID_DIR has been replaced by HADOOP_SECURE_PID_DIR. Using value of HADOOP_SECURE_DN_PID_DIR.
+Stopping secondary namenodes [exp-2-01]
+Copying Hadoop logs back to /home/ajaved/expansecluster/logs...
+'/scratch/ajaved/job_17872038/logs' -> '/home/ajaved/expansecluster/logs'
+'/scratch/ajaved/job_17872038/logs/hadoop-ajaved-namenode-exp-2-01.out' -> '/home/ajaved/expansecluster/logs/hadoop-ajaved-namenode-exp-2-01.out'
+'/scratch/ajaved/job_17872038/logs/SecurityAuth-ajaved.audit' -> '/home/ajaved/expansecluster/logs/SecurityAuth-ajaved.audit'
+'/scratch/ajaved/job_17872038/logs/hadoop-ajaved-datanode-exp-2-01.out' -> '/home/ajaved/expansecluster/logs/hadoop-ajaved-datanode-exp-2-01.out'
+'/scratch/ajaved/job_17872038/logs/hadoop-ajaved-namenode-exp-2-01.log' -> '/home/ajaved/expansecluster/logs/hadoop-ajaved-namenode-exp-2-01.log'
+'/scratch/ajaved/job_17872038/logs/hadoop-ajaved-datanode-exp-2-01.log' -> '/home/ajaved/expansecluster/logs/hadoop-ajaved-datanode-exp-2-01.log'
+'/scratch/ajaved/job_17872038/logs/hadoop-ajaved-secondarynamenode-exp-2-01.out' -> '/home/ajaved/expansecluster/logs/hadoop-ajaved-secondarynamenode-exp-2-01.out'
+'/scratch/ajaved/job_17872038/logs/hadoop-ajaved-secondarynamenode-exp-2-01.log' -> '/home/ajaved/expansecluster/logs/hadoop-ajaved-secondarynamenode-exp-2-01.log'
+'/scratch/ajaved/job_17872038/logs/spark-ajaved-org.apache.spark.deploy.master.Master-1-exp-2-01.out' -> '/home/ajaved/expansecluster/logs/spark-ajaved-org.apache.spark.deploy.master.Master-1-exp-2-01.out'
+removed directory '/scratch/ajaved/job_17872038/tmp/dfs/namesecondary'
+removed directory '/scratch/ajaved/job_17872038/tmp/dfs'
+removed directory '/scratch/ajaved/job_17872038/tmp'
+removed '/scratch/ajaved/job_17872038/hdfs_data/current/BP-3959686-198.202.103.194-1669938032627/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed '/scratch/ajaved/job_17872038/hdfs_data/current/BP-3959686-198.202.103.194-1669938032627/current/finalized/subdir0/subdir0/blk_1073741825'
+removed directory '/scratch/ajaved/job_17872038/hdfs_data/current/BP-3959686-198.202.103.194-1669938032627/current/finalized/subdir0/subdir0'
+removed directory '/scratch/ajaved/job_17872038/hdfs_data/current/BP-3959686-198.202.103.194-1669938032627/current/finalized/subdir0'
+removed directory '/scratch/ajaved/job_17872038/hdfs_data/current/BP-3959686-198.202.103.194-1669938032627/current/finalized'
+removed directory '/scratch/ajaved/job_17872038/hdfs_data/current/BP-3959686-198.202.103.194-1669938032627/current/rbw'
+removed '/scratch/ajaved/job_17872038/hdfs_data/current/BP-3959686-198.202.103.194-1669938032627/current/dfsUsed'
+removed '/scratch/ajaved/job_17872038/hdfs_data/current/BP-3959686-198.202.103.194-1669938032627/current/VERSION'
+removed directory '/scratch/ajaved/job_17872038/hdfs_data/current/BP-3959686-198.202.103.194-1669938032627/current'
+removed '/scratch/ajaved/job_17872038/hdfs_data/current/BP-3959686-198.202.103.194-1669938032627/scanner.cursor'
+removed directory '/scratch/ajaved/job_17872038/hdfs_data/current/BP-3959686-198.202.103.194-1669938032627/tmp'
+removed directory '/scratch/ajaved/job_17872038/hdfs_data/current/BP-3959686-198.202.103.194-1669938032627'
+removed '/scratch/ajaved/job_17872038/hdfs_data/current/VERSION'
+removed directory '/scratch/ajaved/job_17872038/hdfs_data/current'
+removed directory '/scratch/ajaved/job_17872038/hdfs_data'
+removed '/scratch/ajaved/job_17872038/logs/SecurityAuth-ajaved.audit'
+removed '/scratch/ajaved/job_17872038/logs/hadoop-ajaved-secondarynamenode-exp-2-01.out'
+removed '/scratch/ajaved/job_17872038/logs/hadoop-ajaved-secondarynamenode-exp-2-01.log'
+removed '/scratch/ajaved/job_17872038/logs/hadoop-ajaved-datanode-exp-2-01.out'
+removed '/scratch/ajaved/job_17872038/logs/hadoop-ajaved-datanode-exp-2-01.log'
+removed '/scratch/ajaved/job_17872038/logs/spark-ajaved-org.apache.spark.deploy.master.Master-1-exp-2-01.out'
+removed '/scratch/ajaved/job_17872038/logs/hadoop-ajaved-namenode-exp-2-01.log'
+removed '/scratch/ajaved/job_17872038/logs/hadoop-ajaved-namenode-exp-2-01.out'
+removed directory '/scratch/ajaved/job_17872038/logs'
+removed '/scratch/ajaved/job_17872038/namenode_data/current/seen_txid'
+removed '/scratch/ajaved/job_17872038/namenode_data/current/fsimage_0000000000000000000.md5'
+removed '/scratch/ajaved/job_17872038/namenode_data/current/fsimage_0000000000000000000'
+removed '/scratch/ajaved/job_17872038/namenode_data/current/VERSION'
+removed '/scratch/ajaved/job_17872038/namenode_data/current/edits_inprogress_0000000000000000001'
+removed directory '/scratch/ajaved/job_17872038/namenode_data/current'
+removed directory '/scratch/ajaved/job_17872038/namenode_data'
+removed directory '/scratch/ajaved/job_17872038/pids'
